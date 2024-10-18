@@ -1,0 +1,412 @@
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #2C3E50; /* Dark background color */
+    padding: 15px 0;
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center the items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+    margin: 0 20px; /* Space between items */
+}
+
+.nav-links a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Font size */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-links a:hover {
+    color: #3498DB; /* Change color on hover */
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 20px;
+    color: #fff;
+}
+
+.navbar h1 {
+    display: inline;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: inline;
+    float: right;
+}
+
+.navbar nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about, #skills, #projects, #contact {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+h2 {
+    color: #34495e;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* Form Styles */
+form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+/* General Styles */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header#hero {
+    background: linear-gradient(90deg, #2C3E50, #3498DB);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+.hero-content .btn {
+    background-color: #fff;
+    color: #3498DB;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #ecf0f1;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #2C3E50;
+    margin-bottom: 40px;
+}
+
+
+
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill {
+    width: 22%;
+}
+
+.progress-bar {
+    background-color: #ecf0f1;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: #3498DB;
+    border-radius: 5px;
+}
+
+
+
+/* languages Section */
+.languages-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.language {
+    display: inline-block;
+    width: 22%;
+}
+
+.language-bar {
+    background-color: #ecf0f1;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: #3498DB;
+    border-radius: 5px;
+}
+
+
+/* Projects Section */
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project .btn {
+    background-color: #3498DB;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.project .btn:hover {
+    background-color: #2980B9;
+}
+
+
+/* educarion section  */
+#education {
+    background-color: #F9F9F9; /* Light background color */
+    padding: 50px 20px; /* Top and bottom padding */
+    text-align: center; /* Center text */
+    border: 1px solid #EAEAEA; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the section */
+}
+
+
+.education-item {
+    margin-bottom: 15px; /* Space between education items */
+    
+}
+
+.education-item h3 {
+    font-size: 1.5em; /* Slightly larger font for degree */
+    margin-bottom: 5px; /* Space below the degree */
+}
+
+.education-item p, .education-item ul {
+    margin: 5px 0; /* Space above and below paragraphs and lists */
+    font-size: 1em; /* Standard font size */
+}
+
+/* Certificates Section Styles */
+#certificates {
+    background-color: #F9F9F9; /* Light background color */
+    padding: 50px 20px; /* Top and bottom padding */
+    text-align: center; /* Center text */
+    border: 1px solid #EAEAEA; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the section */
+}
+
+#certificates h2 {
+    color: #2C3E50; /* Dark color for headings */
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 24px; /* Font size for headings */
+}
+
+.certificates-container {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items horizontally */
+}
+
+.certificate-item {
+    background-color: #FFFFFF; /* White background for each certificate item */
+    border: 1px solid #E1E1E1; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 15px; /* Margin between items */
+    padding: 20px; /* Inner padding */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+    width: 250px; /* Fixed width for uniformity */
+    text-align: left; /* Align text to the left */
+}
+
+.certificate-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.certificate-item h3 {
+    font-size: 18px; /* Font size for certificate titles */
+    color: #2980B9; /* Color for certificate titles */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.certificate-item p {
+    font-size: 14px; /* Font size for descriptions */
+    color: #555; /* Gray color for descriptions */
+}
+/* Resume Section Styles */
+#resume {
+    background-color: #F9F9F9; /* Light background color */
+    padding: 20px 20px; /* Top and bottom padding */
+    text-align: center; /* Center text */
+    border: 1px solid #EAEAEA; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the section */
+}
+
+#resume h2 {
+    color: #2C3E50; /* Dark color for headings */
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 24px; /* Font size for headings */
+}
+
+.resume-container {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+}
+
+.resume-container p {
+    font-size: 16px; /* Font size for description */
+    color: #555; /* Gray color for description */
+    margin-bottom: 15px; /* Space below description */
+}
+
+.resume-btn {
+    background-color: #3498DB; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.resume-btn:hover {
+    background-color: #2980B9; /* Darker blue on hover */
+}
+
+/* Contact Section */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498DB;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980B9;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #3498DB;
+    text-decoration: none;
+}
+
+
+
+
+
+
