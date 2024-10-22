@@ -456,3 +456,56 @@ button:hover {
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 20px; /* Space below the section */
 }
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    flex: 1 1 200px; /* Adjust the items to fit at least 200px wide */
+    margin: 10px;
+}
+
+
+/* Default (Mobile first) */
+body {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Tablets (min-width: 768px) */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+/* Desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+
+
+.container {
+    width: 90%; /* Width is 90% of the viewport */
+}
+
+h1 {
+    font-size: 2rem; /* 2 times the root font size */
+}
+
+
