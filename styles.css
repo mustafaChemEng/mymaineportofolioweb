@@ -410,3 +410,49 @@ button:hover {
 
 
 
+/* experiences and memberships style  */
+#experience, #memberships {
+    margin-bottom: 40px;
+  }
+  
+  .experience-item, .membership-item {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  /* i care net button  */
+  .btn{
+    border-width: 1px;
+    border-style: solid;
+    font-size: 1rem;
+    background: #2980B9;
+    color: white;
+    border-color: #2980B9;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+
+  #experience {
+    background-color: #F9F9F9; /* Light background color */
+    padding: 50px 20px; /* Top and bottom padding */
+    text-align: center; /* Center text */
+    border: 1px solid #EAEAEA; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the section */
+}
