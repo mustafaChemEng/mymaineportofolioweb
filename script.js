@@ -24,3 +24,11 @@ document.querySelectorAll('.progress').forEach(function(progress) {
         progress.style.transform = `rotate(${rotation}deg)`;
     }
 });
+
+
+
+// copy rights 
+<script>
+    const year = new Date().getFullYear();
+    document.querySelector("footer p").innerHTML = `&copy; ${year} Your Company Name. All rights reserved.`;
+</script>
