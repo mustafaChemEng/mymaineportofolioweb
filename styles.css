@@ -594,3 +594,58 @@ footer {
 footer p {
   margin: 0;
 }
+
+
+/* ******************************************** */
+
+@media (max-width: 768px) {
+  /* Navigation bar adjustments */
+  nav ul {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 10px 15px;
+  }
+
+  /* Create a second row for the nav items on mobile */
+  nav ul li:nth-child(n+4) {
+    clear: both; /* Start the next row */
+  }
+
+  /* Hero section adjustments */
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* Appointment form adjustments */
+  .appointment-form {
+    max-width: 100%;
+    margin: 20px;
+  }
+
+  .appointment-form input,
+  .appointment-form textarea {
+    width: 100%;
+  }
+
+  /* Header text size */
+  header h1 {
+    font-size: 24px;
+  }
+
+  /* Section spacing */
+  section {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 10px 0;
+  }
+}
