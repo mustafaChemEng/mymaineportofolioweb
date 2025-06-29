@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
- 
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mustafa A.Y. Adam - Portfolio</title>
-  <!-- Google tag (gtag.js) -->
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CEL6NWL5QM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,28 +14,19 @@
     gtag('config', 'G-CEL6NWL5QM');
   </script>
 
-   <!-- SEO Meta Tags -->
-<meta property="og:title" content="Mustafa Eng | Portfolio">
-<meta property="og:description" content="Chemical Engineering student portfolio with projects in Python, Simulink, MATLAB and more.">
-<meta property="og:url" content="https://mustafaeng.tech">
-<meta property="og:type" content="website">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Mustafa Ali Yahya Adam's professional portfolio – Chemical Engineering, programming projects, simulation models, certificates, and contact.">
+  <meta name="keywords" content="Chemical Engineering, Mustafa Ali, Mustafa Yahya, GitHub Portfolio, Simulink, MATLAB, Python, Projects">
+  <meta name="author" content="Mustafa Ali Yahya Adam">
 
-  
-<meta name="description" content="Mustafa Ali Yahya Adam's professional portfolio – Chemical Engineering, programming projects, simulation models, certificates, and contact.">
-<meta name="keywords" content="Chemical Engineering, Mustafa Ali, Mustafa Yahya, GitHub Portfolio, Simulink, MATLAB, Python, Projects">
-<meta name="author" content="Mustafa Ali Yahya Adam">
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Mustafa Ali Yahya Adam | Chemical Engineering Portfolio">
+  <meta property="og:description" content="Explore Mustafa's engineering projects, simulations, and academic achievements.">
+  <meta property="og:url" content="https://mustafaeng.tech">
+  <meta property="og:type" content="website">
 
-<meta name="description" content="Mustafa Ali Yahya Adam – Chemical Engineering Student, Projects in Simulation, Process Design, and Programming. Portfolio and contact info.">
-<meta name="keywords" content="Mustafa Ali, Mustafa Yahya, Chemical Engineering, Portfolio, Process Simulation, MATLAB, Python, C++, GitHub, mustafaeng.tech">
-<meta name="author" content="Mustafa Ali Yahya Adam">
-
-<!-- Open Graph for social sharing -->
-<meta property="og:title" content="Mustafa Ali Yahya Adam | Chemical Engineering Portfolio">
-<meta property="og:description" content="Explore Mustafa's engineering projects, simulations, and academic achievements.">
-<meta property="og:url" content="https://mustafaeng.tech">
-<meta property="og:type" content="website">
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="styles.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 </head>
@@ -64,41 +54,51 @@
 <button id="theme-toggle">🌓</button>
 
 <section id="about" data-aos="fade-up">
-  <h2 id="about-heading">About Me</h2>
-  <p id="about-text">Hi, I'm Mustafa Ali Yahya Adam, a Chemical Engineering student with a passion for programming, simulation, and sustainable technology.</p>
+  <h2 id="about-heading">👋 About Me</h2>
+  <p id="about-text">I'm Mustafa A.Y. Adam, a Chemical Engineering student at Bolu Abant Izzet Baysal University. I'm passionate about process engineering, simulation, and chemical innovation. I use Python, MATLAB, SolidWorks, and C++ to simulate and optimize chemical processes.</p>
 </section>
 
 <section id="skills" data-aos="fade-right">
   <h2>🛠️ Skills</h2>
-  <p>Python, MATLAB, SolidWorks, HTML, CSS, JavaScript, C++</p>
+  <p>Programming: Python, MATLAB, SolidWorks, AutoCAD, C++, C#, HTML/CSS</p>
+  <p>Tools: Git, VS Code, Overleaf | Design: Canva, Figma, WordPress</p>
 </section>
 
 <section id="projects" data-aos="zoom-in">
   <h2>📁 Projects</h2>
-  <p>See GitHub for Batch Reactor, Sharbot Fermentation, Portfolio Web Dev, and more.</p>
+  <ul>
+    <li><strong>Sharbot Fermentation Model</strong> – Simulates sugar → ethanol → vinegar dynamics + CO₂ generation</li>
+    <li><strong>Batch Reactor Simulation</strong> – Reaction A → B → C, finding max reactor volume</li>
+    <li><strong>Syngas Production</strong> – MATLAB, Excel, SolidWorks integration</li>
+    <li><strong>Pipeline Design</strong> – Petroleum flow project using Python and SolidWorks</li>
+  </ul>
 </section>
 
 <section id="resume" data-aos="fade-left">
   <h2 id="resume-heading">📄 Resume</h2>
-  <a href="your-resume.pdf" class="btn" download>Download Resume</a>
+  <a href="Mustafa_Ali_Adam_CV_Optimized_Final.pdf" class="btn" download>Download Resume</a>
 </section>
 
 <section id="certificates" data-aos="fade-right">
   <h2>📜 Certificates</h2>
-  <p>Project Management, Python, HTML & CSS, English Proficiency, TOT</p>
+  <ul>
+    <li>AIChE: Chemical Safety, Runaway Reactions, Hazard Recognition</li>
+    <li>Coursera: Streamlit, Project Management, HTML/CSS, UX, Python</li>
+    <li>Other: Python (Codezella), English Proficiency, TOT, TTC, PLC (LinkedIn)</li>
+  </ul>
 </section>
 
 <section id="experience" data-aos="zoom-in">
   <h2>📚 Experience</h2>
-  <p>Albaraka Company, I Care-Net, YALI Program, Travel Agency Founder</p>
+  <p>Albaraka Company, I Care-Net, YALI Program, Tutor (ChemEngStudent), Travel Agency Founder</p>
 </section>
 
 <section id="contact" data-aos="fade-up">
   <h2 id="contact-heading">📬 Contact Me</h2>
-  <form id="contact-form">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="email" id="email" placeholder="Your Email" required>
-    <textarea id="message" placeholder="Your Message" required></textarea>
+  <form id="contact-form" action="https://formspree.io/f/xpwrkvjr" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Send</button>
   </form>
 </section>
