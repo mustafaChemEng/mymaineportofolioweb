@@ -1,11 +1,11 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mustafa A.Y. Adam - Portfolio</title>
 
-  <!-- Google Analytics -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CEL6NWL5QM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,6 +15,11 @@
   </script>
 
   <!-- SEO Meta Tags -->
+  <meta property="og:title" content="Mustafa Eng | Portfolio">
+  <meta property="og:description" content="Chemical Engineering student portfolio with projects in Python, Simulink, MATLAB and more.">
+  <meta property="og:url" content="https://mustafaeng.tech">
+  <meta property="og:type" content="website">
+  
   <meta name="description" content="Mustafa Ali Yahya Adam's professional portfolio – Chemical Engineering, programming projects, simulation models, certificates, and contact.">
   <meta name="keywords" content="Chemical Engineering, Mustafa Ali, Mustafa Yahya, GitHub Portfolio, Simulink, MATLAB, Python, Projects">
   <meta name="author" content="Mustafa Ali Yahya Adam">
@@ -25,10 +30,10 @@
   <meta property="og:url" content="https://mustafaeng.tech">
   <meta property="og:type" content="website">
 
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -54,77 +59,46 @@
 <button id="theme-toggle">🌓</button>
 
 <section id="about" data-aos="fade-up">
-  <h2 id="about-heading">👋 About Me</h2>
-  <p id="about-text">Hi, I’m Mustafa Ali Yahya Adam — a Chemical Engineering student at Bolu Abant Izzet Baysal University with a deep passion for sustainable process design, simulation, and tech-driven innovation.<br><br>
+  <h2 id="about-heading">About Me</h2>
+  <p id="about-text">
+    👋 Hi, I’m Mustafa Ali Yahya Adam — a Chemical Engineering student at Bolu Abant Izzet Baysal University with a deep passion for sustainable process design, simulation, and tech-driven innovation.<br><br>
     I bring hands-on experience in syngas and hydrogen systems, petroleum pipeline design, and fermentation modeling, using tools like Python, MATLAB, SolidWorks, and Streamlit.<br><br>
     Currently, I’m advancing my expertise through AIChE SACHE safety certifications and expanding into C++ and energy optimization.<br><br>
-    I love combining engineering and code to create real-world solutions — and I’m open to internships, research, or global collaboration..</p>
+    I love combining engineering and code to create real-world solutions — and I’m open to internships, research, or global collaboration.
+  </p>
 </section>
 
 <section id="skills" data-aos="fade-right">
   <h2>🛠️ Skills</h2>
-  <div class="skills-container">
-    <div class="skill">
-      <span>Python</span>
-      <div class="skill-bar"><div class="fill" style="width: 85%"></div></div>
-    </div>
-    <div class="skill">
-      <span>MATLAB</span>
-      <div class="skill-bar"><div class="fill" style="width: 80%"></div></div>
-    </div>
-    <div class="skill">
-      <span>SolidWorks</span>
-      <div class="skill-bar"><div class="fill" style="width: 75%"></div></div>
-    </div>
-    <div class="skill">
-      <span>C++</span>
-      <div class="skill-bar"><div class="fill" style="width: 60%"></div></div>
-    </div>
-  </div>
+  <p>Python, MATLAB, SolidWorks, HTML, CSS, JavaScript, C++</p>
 </section>
 
-  <section id="projects" data-aos="zoom-in">
+<section id="projects" data-aos="zoom-in">
   <h2>📁 Projects</h2>
-  <div class="project-grid">
-    <div class="project-card">
-      <h3>Sharbot Fermentation</h3>
-      <p>Simulates sugar → ethanol → vinegar + CO₂.</p>
-      <a href="https://github.com/mustafaChemEng/Sharbot-Fermentation-Lifecycle-Model" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h3>Batch Reactor</h3>
-      <p>Dynamic model for A → B → C reaction series.</p>
-      <a href="https://github.com/mustafaChemEng/BatchReactor_AtoBtoC_Simulation" target="_blank">View on GitHub</a>
-    </div>
-  </div>
+  <p>See GitHub for Batch Reactor, Sharbot Fermentation, Portfolio Web Dev, and more.</p>
 </section>
-
 
 <section id="resume" data-aos="fade-left">
   <h2 id="resume-heading">📄 Resume</h2>
-  <a href="Mustafa_Ali_Adam_CV_Optimized_Final.pdf" class="btn" download>Download Resume</a>
+  <a href="your-resume.pdf" class="btn" download>Download Resume</a>
 </section>
 
 <section id="certificates" data-aos="fade-right">
   <h2>📜 Certificates</h2>
-  <ul>
-    <li>AIChE: Chemical Safety, Runaway Reactions, Hazard Recognition</li>
-    <li>Coursera: Streamlit, Project Management, HTML/CSS, UX, Python</li>
-    <li>Other: Python (Codezella), English Proficiency, TOT, TTC, PLC (LinkedIn)</li>
-  </ul>
+  <p>Project Management, Python, HTML & CSS, English Proficiency, TOT</p>
 </section>
 
 <section id="experience" data-aos="zoom-in">
   <h2>📚 Experience</h2>
-  <p>Albaraka Company, I Care-Net, YALI Program, Tutor (ChemEngStudent), Travel Agency Founder</p>
+  <p>Albaraka Company, I Care-Net, YALI Program, Travel Agency Founder</p>
 </section>
 
 <section id="contact" data-aos="fade-up">
   <h2 id="contact-heading">📬 Contact Me</h2>
-  <form id="contact-form" action="https://formspree.io/f/xpwrkvjr" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
     <button type="submit">Send</button>
   </form>
 </section>
@@ -136,8 +110,5 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init({duration:1000, once:true});</script>
 <script src="script.js"></script>
-
-  <button id="scrollTopBtn" title="Go to top">↑</button>
-
 </body>
 </html>
