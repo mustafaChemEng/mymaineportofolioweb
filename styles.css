@@ -166,3 +166,93 @@ footer {
     padding: 2rem 1rem;
   }
 }
+
+
+
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #2c3e50;
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+#scrollTopBtn:hover {
+  background-color: #34495e;
+}
+
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.skill {
+  font-weight: 600;
+}
+.skill-bar {
+  background: #ddd;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 10px;
+}
+.skill-bar .fill {
+  background: #2c3e50;
+  height: 10px;
+  border-radius: 30px;
+  transition: width 1s ease-in-out;
+}
+
+
+.project-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.project-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+.project-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+
+.blog-post {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.blog-post h3 {
+  margin-top: 0;
+}
+.blog-post small {
+  display: block;
+  margin-top: 1rem;
+  color: gray;
+}
+
+
+
+
