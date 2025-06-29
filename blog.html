@@ -1,7 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- SEO Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mustafa's Blog</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+    <!-- SEO Meta Tags -->
 <meta name="description" content="Mustafa Ali Yahya Adam – Chemical Engineering Student, Projects in Simulation, Process Design, and Programming. Portfolio and contact info.">
 <meta name="keywords" content="Mustafa Ali, Mustafa Yahya, Chemical Engineering, Portfolio, Process Simulation, MATLAB, Python, C++, GitHub, mustafaeng.tech">
 <meta name="author" content="Mustafa Ali Yahya Adam">
@@ -11,44 +17,35 @@
 <meta property="og:description" content="Explore Mustafa's engineering projects, simulations, and academic achievements.">
 <meta property="og:url" content="https://mustafaeng.tech">
 <meta property="og:type" content="website">
-
-  <meta charset="UTF-8" />
-  <title>My Blog – Mustafa A.Y. Adam</title>
-  <link rel="stylesheet" href="styles.css" />
+  
 </head>
 <body>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="index.html">🏠 Home</a></li>
-      <li><a href="blog.html">📝 Blog</a></li>
-      <li><a href="work.html">💼 Work</a></li>
-    </ul>
-  </nav>
+<nav>
+  <ul class="nav-links">
+    <li><a href="index.html">← Back to Portfolio</a></li>
+  </ul>
+</nav>
 
-  <section id="blog">
-    <h2>📝 My Blog</h2>
-    <article>
-      <h3>How I Modeled a Fermentation Process Using Simulink</h3>
-      <p>Published: June 2025</p>
-      <p>I created a lifecycle simulation of Sharbot fermentation with sugar, ethanol, and vinegar dynamics. This post explains the science, modeling logic, and results.</p>
-      <a class="btn" href="https://github.com/mustafaChemEng/Sharbot-Fermentation-Lifecycle-Model">Read More</a>
-    </article>
+<section>
+  <h2>📝 My Blog</h2>
+  <div class="blog-post">
+    <h3>Publishing the Sharbot Fermentation Model</h3>
+    <p>I'm currently turning my complete Simulink simulation into a research paper and GitHub case study. This is the first major step toward open-source biochemical simulation.</p>
+    <small>📅 June 29, 2025</small>
+  </div>
 
-    <article>
-      <h3>My Journey into Programming as a Chemical Engineer</h3>
-      <p>Published: May 2025</p>
-      <p>As a chem eng student, coding helped me design, analyze, and solve real problems. Here’s how I combined MATLAB, Python, and C++ with my major.</p>
-    </article>
+  <div class="blog-post">
+    <h3>Why Chemical Engineers Should Learn Programming</h3>
+    <p>Using Python, MATLAB, or C++ can unlock powerful simulation and optimization tools. I explain how I started and what tools helped me the most.</p>
+    <small>📅 June 25, 2025</small>
+  </div>
+</section>
 
-    <p>More blog posts coming soon...</p>
-  </section>
+<footer>
+  <p>&copy; <span id="year"></span> Mustafa A.Y. Adam. All rights reserved.</p>
+</footer>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Mustafa A.Y. Adam. All rights reserved.</p>
-  </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
 
