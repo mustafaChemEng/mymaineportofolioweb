@@ -60,19 +60,42 @@
 
 <section id="skills" data-aos="fade-right">
   <h2>🛠️ Skills</h2>
-  <p>Programming: Python, MATLAB, SolidWorks, AutoCAD, C++, C#, HTML/CSS</p>
-  <p>Tools: Git, VS Code, Overleaf | Design: Canva, Figma, WordPress</p>
+  <div class="skills-container">
+    <div class="skill">
+      <span>Python</span>
+      <div class="skill-bar"><div class="fill" style="width: 85%"></div></div>
+    </div>
+    <div class="skill">
+      <span>MATLAB</span>
+      <div class="skill-bar"><div class="fill" style="width: 80%"></div></div>
+    </div>
+    <div class="skill">
+      <span>SolidWorks</span>
+      <div class="skill-bar"><div class="fill" style="width: 75%"></div></div>
+    </div>
+    <div class="skill">
+      <span>C++</span>
+      <div class="skill-bar"><div class="fill" style="width: 60%"></div></div>
+    </div>
+  </div>
 </section>
 
-<section id="projects" data-aos="zoom-in">
+  <section id="projects" data-aos="zoom-in">
   <h2>📁 Projects</h2>
-  <ul>
-    <li><strong>Sharbot Fermentation Model</strong> – Simulates sugar → ethanol → vinegar dynamics + CO₂ generation</li>
-    <li><strong>Batch Reactor Simulation</strong> – Reaction A → B → C, finding max reactor volume</li>
-    <li><strong>Syngas Production</strong> – MATLAB, Excel, SolidWorks integration</li>
-    <li><strong>Pipeline Design</strong> – Petroleum flow project using Python and SolidWorks</li>
-  </ul>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Sharbot Fermentation</h3>
+      <p>Simulates sugar → ethanol → vinegar + CO₂.</p>
+      <a href="https://github.com/mustafaChemEng/Sharbot-Fermentation-Lifecycle-Model" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>Batch Reactor</h3>
+      <p>Dynamic model for A → B → C reaction series.</p>
+      <a href="https://github.com/mustafaChemEng/BatchReactor_AtoBtoC_Simulation" target="_blank">View on GitHub</a>
+    </div>
+  </div>
 </section>
+
 
 <section id="resume" data-aos="fade-left">
   <h2 id="resume-heading">📄 Resume</h2>
@@ -110,5 +133,8 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init({duration:1000, once:true});</script>
 <script src="script.js"></script>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
 </body>
 </html>
