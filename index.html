@@ -2,76 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mustafa Ali Yahya Adam's professional portfolio showcasing skills, projects, and certifications in chemical engineering, programming, and web development." />
-  <meta name="keywords" content="Mustafa Ali Yahya Adam, chemical engineering, Python, HTML, CSS, programming, portfolio, web development" />
-  <meta name="author" content="Mustafa Ali Yahya Adam" />
-  <title>Mustafa Ali Yahya Adam - Portfolio</title>
-
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mustafa A.Y. Adam - Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 </head>
 <body>
 
-  <!-- Add all your main sections here (About, Skills, Projects, etc.) -->
+<nav>
+  <ul class="nav-links">
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="work.html">Work With Me</a></li>
+  </ul>
+</nav>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form" action="https://formspree.io/f/xpwrkvjr" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+<div id="lang-switch">
+  <button data-lang="en">🇬🇧</button>
+  <button data-lang="ar">🇸🇩</button>
+  <button data-lang="tr">🇹🇷</button>
+</div>
+<button id="theme-toggle">🌓</button>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+<section id="about" data-aos="fade-up">
+  <h2 id="about-heading">About Me</h2>
+  <p id="about-text">Hi, I'm Mustafa Ali Yahya Adam, a Chemical Engineering student with a passion for programming, simulation, and sustainable technology.</p>
+</section>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+<section id="skills" data-aos="fade-right">
+  <h2>🛠️ Skills</h2>
+  <p>Python, MATLAB, SolidWorks, HTML, CSS, JavaScript, C++</p>
+</section>
 
-      <button type="submit">Send Message</button>
-    </form>
+<section id="projects" data-aos="zoom-in">
+  <h2>📁 Projects</h2>
+  <p>See GitHub for Batch Reactor, Sharbot Fermentation, Portfolio Web Dev, and more.</p>
+</section>
 
-    <div class="social-links">
-      <a class="button" href="https://www.linkedin.com/in/mustafa-adam-2b5624257/">LinkedIn</a>
-      <a class="button" href="https://github.com/mustafaChemEng">GitHub</a>
-      <a class="button" href="https://www.facebook.com/share/auYDQKr7AmL6aMWP/">Facebook</a>
-      <a class="button" href="https://www.instagram.com/c_jay_233/">Instagram</a>
-      <a class="button" href="https://x.com/safsafeng">Twitter</a>
-    </div>
-  </section>
+<section id="resume" data-aos="fade-left">
+  <h2 id="resume-heading">📄 Resume</h2>
+  <a href="your-resume.pdf" class="btn" download>Download Resume</a>
+</section>
 
-  <!-- Comments Section -->
-  <section id="comments">
-    <h2>💬 Leave a Comment</h2>
-    <div id="disqus_thread"></div>
-  </section>
-  <script>
-    var disqus_config = function () {
-      this.page.url = 'https://mustafachemeng.github.io';
-      this.page.identifier = 'mustafa-portfolio-home';
-    };
-    (function () {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://mustafaportfolio.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+<section id="certificates" data-aos="fade-right">
+  <h2>📜 Certificates</h2>
+  <p>Project Management, Python, HTML & CSS, English Proficiency, TOT</p>
+</section>
 
-  <!-- Resume Section -->
-  <section id="resume">
-    <h2>Resume</h2>
-    <div class="resume-container">
-      <p>Download my resume:</p>
-      <a href="https://github.com/mustafaChemEng/PortfolioAssets/raw/main/Mustafa_Ali_Adam_CV_Optimized_Final.docx" class="resume-btn" download>Download Resume</a>
-    </div>
-  </section>
+<section id="experience" data-aos="zoom-in">
+  <h2>📚 Experience</h2>
+  <p>Albaraka Company, I Care-Net, YALI Program, Travel Agency Founder</p>
+</section>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Mustafa A. Y. Adam. All rights reserved.</p>
-  </footer>
+<section id="contact" data-aos="fade-up">
+  <h2 id="contact-heading">📬 Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
 
-  <script src="script.js"></script>
+<footer>
+  <p>&copy; <span id="year"></span> Mustafa A.Y. Adam. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({duration:1000, once:true});</script>
+<script src="script.js"></script>
 </body>
 </html>
