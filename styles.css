@@ -1,8 +1,15 @@
+/* Enhanced Professional CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #222;
   margin: 0;
   padding: 0;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.4s, color 0.4s;
+  line-height: 1.6;
 }
 
 .nav-links {
@@ -10,22 +17,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  background: #333;
+  gap: 1.2rem;
+  background: #2c3e50;
   padding: 1rem;
   margin: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .nav-links a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  padding: 0.5rem;
-  transition: color 0.3s;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
 .nav-links a:hover {
-  color: #f2c94c;
+  background: #34495e;
 }
 
 #lang-switch {
@@ -34,64 +43,109 @@ body {
   left: 10px;
   display: flex;
   gap: 5px;
+  z-index: 1000;
 }
 
 #lang-switch button {
-  margin-right: 5px;
-  padding: 5px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  background: #eee;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
-button#theme-toggle {
+#lang-switch button:hover {
+  background: #ddd;
+}
+
+#theme-toggle {
   position: fixed;
   top: 10px;
   right: 10px;
-  padding: 5px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #eee;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+#theme-toggle:hover {
+  background: #ddd;
 }
 
 section {
-  padding: 2rem;
+  padding: 3rem 1.5rem;
   max-width: 900px;
   margin: auto;
-  line-height: 1.6;
+  background: white;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f2c94c;
+  display: inline-block;
 }
 
 form input, form textarea {
-  display: block;
   width: 100%;
   margin-bottom: 1rem;
-  padding: 10px;
+  padding: 12px;
   font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  background: #fefefe;
 }
 
 form button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1rem;
-  background-color: #333;
+  background-color: #2c3e50;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 form button:hover {
-  background-color: #444;
+  background-color: #34495e;
 }
 
 footer {
-  background: #222;
+  background: #2c3e50;
   color: white;
   text-align: center;
   padding: 1rem;
-  margin-top: 3rem;
+  font-size: 0.9rem;
 }
 
 .dark {
-  background: #111;
-  color: white;
+  background: #121212;
+  color: #eee;
+}
+
+.dark section {
+  background: #1e1e1e;
+  color: #ddd;
+}
+
+.dark .nav-links {
+  background: #1c1c1c;
+}
+
+.dark .nav-links a:hover,
+.dark #theme-toggle:hover,
+.dark #lang-switch button:hover {
+  background: #2a2a2a;
 }
 
 @media (max-width: 768px) {
@@ -100,14 +154,15 @@ footer {
     align-items: center;
   }
 
-  #lang-switch, #theme-toggle {
+  #lang-switch,
+  #theme-toggle {
     position: static;
-    margin: 1rem auto;
     display: block;
+    margin: 1rem auto;
     text-align: center;
   }
 
   section {
-    padding: 1.5rem;
+    padding: 2rem 1rem;
   }
-} 
+}
