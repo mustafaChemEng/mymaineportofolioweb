@@ -154,3 +154,36 @@ footer {
 .btn:hover {
   background: #007b85;
 }
+
+
+
+.project-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-list li {
+  background: #f5f5f5;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-left: 4px solid #007acc;
+  border-radius: 5px;
+}
+
+
+.experience-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.experience-list li {
+  background: #f5f5f5;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-left: 4px solid #28a745;
+  border-radius: 5px;
+}
+
+
+
+
