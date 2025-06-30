@@ -188,11 +188,12 @@
 <!-- Contact -->
 <section id="contact" data-aos="fade-up">
   <h2>📬 Contact Me</h2>
-  <form id="contact-form">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="email" id="email" placeholder="Your Email" required>
-    <textarea id="message" placeholder="Your Message" required></textarea>
+  <form action="https://formspree.io/f/xpwrkvjr" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Send</button>
+    <input type="hidden" name="_next" value="https://mustafaeng.tech/thanks.html">
   </form>
 </section>
 
