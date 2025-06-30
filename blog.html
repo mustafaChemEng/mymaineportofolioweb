@@ -1,62 +1,56 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mustafa's Blog</title>
-  <link rel="stylesheet" href="styles.css"/>
-
-    <!-- SEO Meta Tags -->
-<meta name="description" content="Mustafa Ali Yahya Adam – Chemical Engineering Student, Projects in Simulation, Process Design, and Programming. Portfolio and contact info.">
-<meta name="keywords" content="Mustafa Ali, Mustafa Yahya, Chemical Engineering, Portfolio, Process Simulation, MATLAB, Python, C++, GitHub, mustafaeng.tech">
-<meta name="author" content="Mustafa Ali Yahya Adam">
-
-<!-- Open Graph for social sharing -->
-<meta property="og:title" content="Mustafa Ali Yahya Adam | Chemical Engineering Portfolio">
-<meta property="og:description" content="Explore Mustafa's engineering projects, simulations, and academic achievements.">
-<meta property="og:url" content="https://mustafaeng.tech">
-<meta property="og:type" content="website">
-  
+  <title>Blog – Mustafa A.Y. Adam</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <nav>
   <ul class="nav-links">
-    <li><a href="index.html">← Back to Portfolio</a></li>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+    <li><a href="work.html"><i class="fas fa-handshake"></i> Work With Me</a></li>
   </ul>
 </nav>
 
-<section id="blog" data-aos="fade-up">
-  <h2>🧠 Mustafa's Engineering & Innovation Blog</h2>
-  <p>
-    Welcome to my blog — where chemical engineering meets creativity and code!
-    I write about simulations, student projects, tools like MATLAB & Python, research insights, and productivity tips that help engineers build a smarter future.
-  </p>
+<section id="blog">
+  <h2>📚 My Blog</h2>
+  <p>Welcome to my blog! Here I share insights on chemical engineering, process simulation, project experiences, coding tutorials, and student life reflections. Stay tuned for updates!</p>
 
-  <article>
-    <h3>🔬 Modeling Fermentation Processes: From Sharbot to Vinegar</h3>
-    <p>
-      Discover how I built a complete Simulink model to track sugar, ethanol, and vinegar production over time. This post breaks down the logic, math, and innovation behind the simulation — with real-world relevance to biochemical industries.
-      <br><a href="https://github.com/mustafaChemEng/Sharbot-Fermentation-Lifecycle-Model" target="_blank">View Full Project on GitHub →</a>
-    </p>
-  </article>
+  <div class="blog-entry">
+    <h3>🔬 Simulating the Lifecycle of Sharbot Fermentation</h3>
+    <p class="blog-meta">Posted on July 1, 2025 · Category: Process Simulation</p>
+    <p>I recently modeled the complete Sharbot fermentation process in Simulink, from sugar to ethanol and vinegar. This project merges biochemical kinetics with MATLAB logic, and I’m now preparing it as a publishable case study. <a href="https://github.com/mustafaChemEng/Sharbot-Fermentation-Lifecycle-Model" target="_blank">View the code on GitHub</a>.</p>
+  </div>
 
-  <article>
-    <h3>⚙️ Designing a Syngas Production System for Sustainability</h3>
-    <p>
-      In this post, I share how I combined MATLAB, Excel, and SolidWorks to design and simulate a syngas production system. Ideal for energy engineers and chemical students aiming to reduce emissions and optimize performance.
-    </p>
-  </article>
+  <div class="blog-entry">
+    <h3>⚙️ How I Modeled a Batch Reactor for Series Reactions (A → B → C)</h3>
+    <p class="blog-meta">Posted on June 25, 2025 · Category: Chemical Reaction Engineering</p>
+    <p>This was one of my favorite simulation exercises — modeling a batch reactor in MATLAB/Simulink to determine the optimal conversion of a sequential reaction. I shared this on GitHub, and it’s helping other students around the world! <a href="https://github.com/mustafaChemEng/BatchReactor_AtoBtoC_Simulation" target="_blank">Check it out</a>.</p>
+  </div>
 
-  <p><em>More posts coming soon! Stay tuned as I document project walkthroughs, tutorials, and career reflections from my engineering journey.</em></p>
+  <div class="blog-entry">
+    <h3>🛠 Building My Portfolio Website from Scratch</h3>
+    <p class="blog-meta">Posted on June 20, 2025 · Category: Web Development</p>
+    <p>Using HTML, CSS, JavaScript, and GitHub Pages, I built and launched <a href="https://mustafaeng.tech" target="_blank">mustafaeng.tech</a>. This site showcases my projects, skills, and experience — and it helped me learn SEO, responsive design, and version control!</p>
+  </div>
 </section>
-
 
 <footer>
   <p>&copy; <span id="year"></span> Mustafa A.Y. Adam. All rights reserved.</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
-
