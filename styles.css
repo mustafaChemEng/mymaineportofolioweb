@@ -29,6 +29,14 @@ body {
   color: #00adb5;
 }
 
+/* --- ADDED --- */
+/* Styles the nav link for the page you are currently on */
+.nav-links a.active {
+  color: #00adb5; 
+}
+/* --- END ADDED --- */
+
+
 #lang-switch {
   position: fixed;
   top: 10px;
@@ -120,6 +128,7 @@ footer {
   font-size: 0.9rem;
 }
 
+/* === Dark Mode === */
 .dark {
   background: #111;
   color: white;
@@ -130,6 +139,20 @@ footer {
   color: #ddd;
 }
 
+/* --- ADDED FIX --- */
+/* Fixes list backgrounds in dark mode */
+.dark .project-list li,
+.dark .experience-list li,
+.dark .services-list li {
+  background: #2a2a2a;
+}
+
+.dark .services-list li strong {
+  color: #eee;
+}
+/* --- END ADDED FIX --- */
+
+
 .dark .nav-links {
   background: #000;
 }
@@ -138,6 +161,8 @@ footer {
   background: #fff;
   color: #000;
 }
+/* === End Dark Mode === */
+
 
 .btn {
   display: inline-block;
@@ -156,7 +181,6 @@ footer {
 }
 
 
-
 .project-list {
   list-style-type: none;
   padding: 0;
@@ -166,7 +190,7 @@ footer {
   background: #f5f5f5;
   margin: 0.5rem 0;
   padding: 1rem;
-  border-left: 4px solid #007acc;
+  border-left: 4px solid #007acc; /* Blue */
   border-radius: 5px;
 }
 
@@ -180,13 +204,40 @@ footer {
   background: #f5f5f5;
   margin: 0.5rem 0;
   padding: 1rem;
-  border-left: 4px solid #28a745;
+  border-left: 4px solid #28a745; /* Green */
   border-radius: 5px;
 }
 
+/* --- ADDED --- */
+/* === What I Offer Section (Homepage) === */
+.services-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services-list li {
+  background: #f5f5f5;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-left: 4px solid #ffc107; /* Gold/Yellow */
+  border-radius: 5px;
+}
+
+.services-list li strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: #222; 
+}
+
+.services-list li p {
+  margin: 0;
+  font-size: 1rem; 
+}
+/* --- END ADDED --- */
 
 
-/* === Work With Me Section === */
+/* === Work With Me Page === */
 #work-with-me {
   padding: 4rem 1rem;
   background-color: #f9f9f9;
@@ -233,63 +284,11 @@ footer {
   color: #004799;
 }
 
+/* --- DUPLICATE REMOVED --- */
+/* The repeated #work-with-me block was here and has been removed. */
 
 
-
-
-#work-with-me {
-  padding: 4rem 1rem;
-  background-color: #f9f9f9;
-  font-family: 'Poppins', sans-serif;
-}
-
-#work-with-me h2 {
-  font-size: 2.2rem;
-  color: #222;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-#work-with-me h3 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  color: #333;
-}
-
-#work-with-me p {
-  font-size: 1.05rem;
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-}
-
-#work-with-me ul {
-  list-style-type: none;
-  padding-left: 1.2rem;
-}
-
-#work-with-me ul li::before {
-  content: "✅ ";
-  color: #28a745;
-  margin-right: 0.5rem;
-}
-
-#work-with-me a {
-  color: #0066cc;
-  text-decoration: underline;
-}
-
-#work-with-me a:hover {
-  color: #004799;
-}
-
-
-
-
-
-
-
-
+/* === Blog Page === */
 #blog {
   padding: 4rem 1rem;
   max-width: 900px;
@@ -341,17 +340,10 @@ footer {
   text-decoration: underline;
   color: #005999;
 }
+/* === End Blog Page === */
 
 
-
-
-
-
-
-
-
-
-
+/* === Form Styles (Mainly Contact) === */
 form {
   display: flex;
   flex-direction: column;
@@ -384,5 +376,3 @@ form button {
 form button:hover {
   background-color: #007b85;
 }
-
-
