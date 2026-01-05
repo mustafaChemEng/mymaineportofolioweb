@@ -26,13 +26,41 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+      .project-media-container {
+          margin: 15px 0;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+          border: 1px solid #eee;
+      }
+      .project-img {
+          width: 100%;
+          height: auto;
+          display: block;
+          transition: transform 0.3s ease;
+      }
+      .project-img:hover {
+          transform: scale(1.02);
+      }
+      .tech-badge {
+          background-color: #f0f0f0;
+          padding: 2px 8px;
+          border-radius: 4px;
+          font-size: 0.85em;
+          color: #333;
+          border: 1px solid #ccc;
+      }
+  </style>
 </head>
 
 <body>
 <nav>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#services">What I Offer</a></li> <li><a href="#skills">Skills</a></li>
+    <li><a href="#services">What I Offer</a></li> 
+    <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#resume">Resume</a></li>
     <li><a href="#certificates">Certificates</a></li>
@@ -48,6 +76,7 @@
   <p>
     Motivated Chemical Engineering Student with strong foundations in process design, simulation, and safety. Passionate about remote collaboration, global quality systems, and sustainable industrial innovation. Skilled in combining engineering and programming to deliver impactful, tech-driven solutions. Experienced in biochemical simulations, pipeline design, and digital tools.
     Hi, I’m Mustafa Ali Yahya Adam — a Chemical Engineering student at Bolu Abant Izzet Baysal University with a deep passion for sustainable process design, simulation, and tech-driven innovation.<br><br>
+  </p>
 </section>
 
 <section id="services" data-aos="fade-up">
@@ -75,43 +104,58 @@
 
 <section id="skills" data-aos="fade-right">
   <h2><span aria-hidden="true">🛠️</span> Skills</h2>
-  <p>Python, MATLAB, SolidWorks, HTML, CSS, C++, Git</p>
+  <p>Python, MATLAB, SolidWorks, HTML, CSS, C++, Git, AVEVA Process Simulation</p>
 </section>
 
 <section id="projects" data-aos="zoom-in">
   <h2><span aria-hidden="true">📁</span> Featured Projects</h2>
 
   <ul class="project-list">
+    
+    <li>
+      <strong><span aria-hidden="true">💧</span> SafaWater Solution™ (Digital Twin)</strong> – Graduation Project – Dec 2025
+      <br><br>
+      
+      <div class="project-media-container">
+          <img src="images/safawater-aveva.jpg" alt="AVEVA Process Simulation of SafaWater Renewable Grid" class="project-img">
+      </div>
+
+      <p><strong>Tech Stack:</strong> <span class="tech-badge">AVEVA Process Simulation</span> <span class="tech-badge">Python</span> <span class="tech-badge">Renewable Energy</span></p>
+      • Designed a comprehensive renewable-powered (Solar/Wind) off-grid water purification system.<br>
+      • Integrated UF-RO technology with battery storage management to optimize energy consumption.<br>
+      • Validated the "Digital Twin" using dynamic simulation to calculate precise water production costs ($/kg).
+      <br><br>
+    </li>
     <li>
       <strong><span aria-hidden="true">🧪</span> Syngas Production</strong>    -            University Project – Feb – June 2025  
       <br><br>
-•	Designed a sustainable synthetic gas production process using MATLAB, Excel, and SolidWorks.
-•	Applied thermodynamic and reaction engineering principles for optimization.
-•	Focused on reaction control, feedstock selection, and catalyst use.
+• Designed a sustainable synthetic gas production process using MATLAB, Excel, and SolidWorks.
+• Applied thermodynamic and reaction engineering principles for optimization.
+• Focused on reaction control, feedstock selection, and catalyst use.
 
     </li>
     <li>
       <strong><span aria-hidden="true">⚙️</span> Petroleum Refinery Pipeline Design</strong> – 
       <br><br>
-•	Optimized pipeline system using Excel, C++, and SolidWorks.
-•	Applied fluid mechanics and energy efficiency calculations.
+• Optimized pipeline system using Excel, C++, and SolidWorks.
+• Applied fluid mechanics and energy efficiency calculations.
 
     </li>
     <li>
       <strong><span aria-hidden="true">🔥</span> Batch Reactor Simulation</strong> –          University Project – June 2025
       <br><br>
-•	Simulated a series reaction mechanism (A → B → C) using MATLAB and Simulink.
-•	Modeled concentration profiles and time-dependent behavior for batch reactor operation.
-•	Applied reaction kinetics, ODE solving, and visualization of dynamic systems.
+• Simulated a series reaction mechanism (A → B → C) using MATLAB and Simulink.
+• Modeled concentration profiles and time-dependent behavior for batch reactor operation.
+• Applied reaction kinetics, ODE solving, and visualization of dynamic systems.
 
     </li>
     <li>
       <strong><span aria-hidden="true">🍹</span> Sharbot Fermentation Lifecycle</strong> –    Independent Research - May 2025 - Ongoing 
       <br><br>
-      •	Developed a full biochemical lifecycle model in MATLAB Simulink simulating the transformation of sugar into ethanol and vinegar.
-•	Modeled yeast and acetic acid bacteria dynamics, including biomass growth, ethanol production, acetic acid formation, CO₂ release, and pH inhibition.
-•	Designed logic to switch between anaerobic - aerobic fermentation stages.
-•	Applications include sustainable food production, vinegar design, and bioethanol studies
+      • Developed a full biochemical lifecycle model in MATLAB Simulink simulating the transformation of sugar into ethanol and vinegar.
+• Modeled yeast and acetic acid bacteria dynamics, including biomass growth, ethanol production, acetic acid formation, CO₂ release, and pH inhibition.
+• Designed logic to switch between anaerobic - aerobic fermentation stages.
+• Applications include sustainable food production, vinegar design, and bioethanol studies
 
     </li>
     <li>
@@ -122,8 +166,6 @@
 
   <p>🔗 Explore more on my <a href="https://github.com/mustafaChemEng" target="_blank">GitHub</a>.</p>
 </section>
-
-
 
 
 <section id="resume" data-aos="fade-left">
@@ -192,7 +234,7 @@
   <h2><span aria-hidden="true">📚</span> Experience</h2>
   <ul class="experience-list">
     <li>
-      <strong><span aria-hidden="true">💼</span> Albaraka Company</strong>               2021 - 2022
+      <strong><span aria-hidden="true">💼</span> Albaraka Company</strong>                2021 - 2022
       <br><br>Managed financial records and supervised logistics operations. Developed early responsibility, communication, and leadership skills.
     </li>
     <li>
