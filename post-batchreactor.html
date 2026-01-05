@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Batch Reactor Simulation - Mustafa A.Y. Adam</title>
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CEL6NWL5QM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-CEL6NWL5QM');
+  </script>
+
+  <meta name="description" content="Simulation of a Batch Reactor for Series Reactions (A->B->C) using MATLAB and Simulink.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <ul class="nav-links">
+    <li><a href="index.html#hero">Home</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="index.html#skills">Toolbox</a></li>
+    <li><a href="index.html#timeline">Journey</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="index.html#contact" class="btn-nav">Contact Me</a></li>
+  </ul>
+  <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+</nav>
+
+<section style="margin-top: 2rem; max-width: 800px;">
+  <div class="blog-entry" style="border-left: none; padding: 0;">
+    <span class="badge" style="margin-bottom: 1rem;">Chemical Reaction Engineering</span>
+    <h1 style="font-size: 2.5rem; color: var(--text); margin-bottom: 0.5rem;">Batch Reactor Simulation (A → B → C)</h1>
+    <p class="blog-meta">Posted on June 25, 2025</p>
+    
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 2rem 0;">
+
+    <p><strong>Overview:</strong></p>
+    <p>
+      Reactors are the heart of any chemical process. In this project, I focused on modeling a <strong>Batch Reactor</strong> 
+      undergoing a series reaction mechanism: <em>A → B → C</em>. The goal was to determine the precise time required to 
+      maximize the concentration of the intermediate product (B) before it degrades into product C.
+    </p>
+
+    <div class="project-media-container">
+      <img src="images/batch-reactor.jpg" alt="Simulink Model of Batch Reactor" class="project-img">
+    </div>
+
+    <h3>The Challenge</h3>
+    <p>
+      In series reactions, the intermediate product often has the highest value. If the reaction runs too long, 
+      Product B converts to C (waste). If it's too short, conversion of A is insufficient.
+    </p>
+
+    <h3>The Solution (MATLAB & Simulink)</h3>
+    <p>
+      I used MATLAB to solve the Ordinary Differential Equations (ODEs) governing the kinetics:
+    </p>
+    <ul style="list-style: disc; margin-left: 20px; margin-bottom: 1rem;">
+      <li>dCa/dt = -k1 * Ca</li>
+      <li>dCb/dt = k1 * Ca - k2 * Cb</li>
+      <li>dCc/dt = k2 * Cb</li>
+    </ul>
+    <p>
+      Using Simulink, I visualized the concentration profiles over time, allowing me to pinpoint the exact 
+      residence time needed for peak efficiency.
+    </p>
+
+    <div style="margin-top: 2rem;">
+      <a href="https://github.com/mustafaChemEng/BatchReactor_AtoBtoC_Simulation" target="_blank" class="btn btn-primary">
+        <i class="fab fa-github"></i> View Code on GitHub
+      </a>
+      <a href="blog.html" class="btn btn-outline" style="margin-left: 10px;">Back to Blog</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Mustafa A.Y. Adam. Built with Code.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
