@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sharbot Fermentation Lifecycle - Mustafa A.Y. Adam</title>
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CEL6NWL5QM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-CEL6NWL5QM');
+  </script>
+
+  <meta name="description" content="Modeling the fermentation lifecycle of Sharbot (Sugar -> Ethanol -> Vinegar) using MATLAB.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <ul class="nav-links">
+    <li><a href="index.html#hero">Home</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="index.html#skills">Toolbox</a></li>
+    <li><a href="index.html#timeline">Journey</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="index.html#contact" class="btn-nav">Contact Me</a></li>
+  </ul>
+  <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+</nav>
+
+<section style="margin-top: 2rem; max-width: 800px;">
+  <div class="blog-entry" style="border-left: none; padding: 0;">
+    <span class="badge" style="margin-bottom: 1rem;">Process Simulation</span>
+    <h1 style="font-size: 2.5rem; color: var(--text); margin-bottom: 0.5rem;">Sharbot Fermentation Lifecycle</h1>
+    <p class="blog-meta">Posted on July 1, 2025</p>
+    
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 2rem 0;">
+
+    <p><strong>Project Overview:</strong></p>
+    <p>
+      Fermentation is a complex biochemical process. "Sharbot" is a traditional drink that undergoes a unique two-stage fermentation: 
+      first converting sugar to ethanol (anaerobic), and then ethanol to acetic acid/vinegar (aerobic). 
+    </p>
+
+    <div class="project-media-container">
+      <img src="images/sharbot-fermentation.jpg" alt="Sharbot Fermentation Model" class="project-img">
+    </div>
+
+    <h3>Key Objectives</h3>
+    <ul style="list-style: disc; margin-left: 20px; margin-bottom: 1rem;">
+      <li>Model yeast dynamics and biomass growth.</li>
+      <li>Simulate the inhibition effects of pH and alcohol concentration.</li>
+      <li>Design logic to switch between anaerobic and aerobic stages automatically.</li>
+    </ul>
+
+    <h3>Implementation</h3>
+    <p>
+      I developed a full biochemical lifecycle model in MATLAB Simulink. The model accounts for CO₂ release and 
+      dynamic changes in acidity. This simulation is applicable to sustainable food production and bio-ethanol studies.
+    </p>
+
+    <div style="margin-top: 2rem;">
+      <a href="https://github.com/mustafaChemEng/Sharbot-Fermentation-Lifecycle-Model" target="_blank" class="btn btn-primary">
+        <i class="fab fa-github"></i> View Code on GitHub
+      </a>
+      <a href="blog.html" class="btn btn-outline" style="margin-left: 10px;">Back to Blog</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Mustafa A.Y. Adam. Built with Code.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
