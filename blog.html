@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
   <title>Blog – Mustafa A.Y. Adam</title>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CEL6NWL5QM"></script>
@@ -14,40 +13,32 @@
     gtag('config', 'G-CEL6NWL5QM');
   </script>
 
-  <meta name="description" content="Mustafa Ali Yahya Adam's blog on chemical engineering, process simulation, coding, and student life.">
-  <meta name="keywords" content="Mustafa Ali, Chemical Engineering, Blog, Process Simulation, MATLAB, Python">
-  <meta name="author" content="Mustafa Ali Yahya Adam">
-  
-  <meta property="og:title" content="Blog | Mustafa A.Y. Adam">
-  <meta property="og:description" content="Insights on chemical engineering, process simulation, and tech projects.">
-  <meta property="og:url" content="https://mustafaeng.tech/blog.html"> <meta property="og:type" content="website">
-
+  <meta name="description" content="Mustafa Ali Yahya Adam's blog on chemical engineering, process simulation, and tech projects.">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
   <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#services">What I Offer</a></li>
-    <li><a href="index.html#skills">Skills</a></li>
-    <li><a href="index.html#projects">Projects</a></li>
-    <li><a href="index.html#resume">Resume</a></li>
-    <li><a href="index.html#certificates">Certificates</a></li>
-    <li><a href="index.html#experience">Experience</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-    <li><a href="blog.html" class="active">Blog</a></li> <li><a href="work.html">Work With Me</a></li>
+    <li><a href="index.html#hero">Home</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="index.html#skills">Toolbox</a></li>
+    <li><a href="index.html#timeline">Journey</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="index.html#contact" class="btn-nav">Contact Me</a></li>
   </ul>
+  <button id="theme-toggle"><i class="fas fa-moon"></i></button>
 </nav>
 
-<section id="blog" data-aos="fade-up">
-  <h2><span aria-hidden="true">📚</span> My Blog</h2>
-  <p>Welcome to my blog! Here I share insights on chemical engineering, process simulation, project experiences, coding tutorials, and student life reflections. Stay tuned for updates!</p>
+<section id="blog" style="margin-top: 2rem;">
+  <div class="section-header" data-aos="fade-up">
+    <h2>My Blog</h2>
+    <p>Insights on simulation, engineering, and student life.</p>
+  </div>
 
   <div class="blog-entry" data-aos="fade-up" data-aos-delay="100">
     <h3><span aria-hidden="true">💧</span> Validating SafaWater Solution™ with AVEVA Process Simulation</h3>
@@ -55,38 +46,39 @@
     <p>
       For my final year graduation project, I developed a "Digital Twin" for the SafaWater Solution™. I used AVEVA Process Simulation to model a renewable energy grid (Solar & Wind) powering a UF-RO water purification system. The goal? To optimize battery storage and minimize the cost of water production. 
       <br><br>
-      <a href="index.html#projects">View the simulation snapshot and technical details on my portfolio page.</a>
+      <a href="index.html#portfolio" style="color: var(--primary); font-weight: bold;">View the simulation snapshot and technical details on my portfolio page.</a>
     </p>
   </div>
+
   <div class="blog-entry" data-aos="fade-up" data-aos-delay="200">
     <h3><span aria-hidden="true">🔬</span> Simulating the Lifecycle of Sharbot Fermentation</h3>
     <p class="blog-meta">Posted on July 1, 2025 · Category: Process Simulation</p>
-    <p>I recently modeled the complete Sharbot fermentation process in Simulink, from sugar to ethanol and vinegar. This project merges biochemical kinetics with MATLAB logic, and I’m now preparing it as a publishable case study. <a href="https://github.com/mustafaChemEng/Sharbot-Fermentation-Lifecycle-Model" target="_blank">View the code on GitHub</a>.</p>
+    <p>I recently modeled the complete Sharbot fermentation process in Simulink, from sugar to ethanol and vinegar. This project merges biochemical kinetics with MATLAB logic, and I’m now preparing it as a publishable case study. <a href="https://github.com/mustafaChemEng/Sharbot-Fermentation-Lifecycle-Model" target="_blank" style="color: var(--primary);">View the code on GitHub</a>.</p>
   </div>
 
   <div class="blog-entry" data-aos="fade-up" data-aos-delay="300">
     <h3><span aria-hidden="true">⚙️</span> How I Modeled a Batch Reactor for Series Reactions (A → B → C)</h3>
     <p class="blog-meta">Posted on June 25, 2025 · Category: Chemical Reaction Engineering</p>
-    <p>This was one of my favorite simulation exercises — modeling a batch reactor in MATLAB/Simulink to determine the optimal conversion of a sequential reaction. I shared this on GitHub, and it’s helping other students around the world! <a href="https://github.com/mustafaChemEng/BatchReactor_AtoBtoC_Simulation" target="_blank">Check it out</a>.</p>
+    <p>This was one of my favorite simulation exercises — modeling a batch reactor in MATLAB/Simulink to determine the optimal conversion of a sequential reaction. I shared this on GitHub, and it’s helping other students around the world! <a href="https://github.com/mustafaChemEng/BatchReactor_AtoBtoC_Simulation" target="_blank" style="color: var(--primary);">Check it out</a>.</p>
   </div>
 
   <div class="blog-entry" data-aos="fade-up" data-aos-delay="400">
     <h3><span aria-hidden="true">🛠</span> Building My Portfolio Website from Scratch</h3>
     <p class="blog-meta">Posted on June 20, 2025 · Category: Web Development</p>
-    <p>Using HTML, CSS, JavaScript, and GitHub Pages, I built and launched <a href="https://mustafaeng.tech" target="_blank">mustafaeng.tech</a>. This site showcases my projects, skills, and experience — and it helped me learn SEO, responsive design, and version control!</p>
+    <p>Using HTML, CSS, JavaScript, and GitHub Pages, I built and launched this site. It showcases my projects, skills, and experience — and helped me learn SEO, responsive design, and version control!</p>
   </div>
 </section>
 
 <footer>
-  <p>&copy; <span id="year"></span> Mustafa A.Y. Adam. All rights reserved.</p>
+  <p>&copy; <span id="year"></span> Mustafa A.Y. Adam. Built with Code.</p>
+  <div class="social-links">
+    <a href="https://github.com/mustafaChemEng" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({ duration: 1000, once: true });</script>
-<script>
-  // Script for automatic year in footer
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+<script>AOS.init({ duration: 800, once: true });</script>
+<script src="script.js"></script>
 </body>
 </html>
