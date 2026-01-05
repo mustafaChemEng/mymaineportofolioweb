@@ -333,3 +333,27 @@ footer {
   .featured-card { grid-template-columns: 1fr; }
   .nav-links { display: none; /* Mobile menu needed logic in script.js, simplified for now */ }
 }
+
+/* --- BLOG PAGE STYLES --- */
+.blog-entry {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-left: 5px solid var(--primary);
+}
+
+.blog-meta {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* Dark Mode support for Blog */
+.dark .blog-entry {
+  background: #1e1e1e;
+  border-color: var(--primary);
+  color: #ddd;
+}
