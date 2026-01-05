@@ -29,13 +29,10 @@ body {
   color: #00adb5;
 }
 
-/* --- ADDED --- */
 /* Styles the nav link for the page you are currently on */
 .nav-links a.active {
   color: #00adb5; 
 }
-/* --- END ADDED --- */
-
 
 #lang-switch {
   position: fixed;
@@ -128,7 +125,48 @@ footer {
   font-size: 0.9rem;
 }
 
-/* === Dark Mode === */
+/* ============================ */
+/* === PROJECT MEDIA STYLES === */
+/* ============================ */
+
+/* Container for Images and Videos */
+.project-media-container {
+  margin: 15px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+/* Images */
+.project-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Tech Stack Badges (e.g. AVEVA, Python) */
+.tech-badge {
+  display: inline-block;
+  background-color: #e0e0e0;
+  padding: 2px 8px;
+  margin: 0 2px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #333;
+  border: 1px solid #ccc;
+  font-weight: 500;
+}
+
+/* ================= */
+/* === DARK MODE === */
+/* ================= */
 .dark {
   background: #111;
   color: white;
@@ -139,7 +177,6 @@ footer {
   color: #ddd;
 }
 
-/* --- ADDED FIX --- */
 /* Fixes list backgrounds in dark mode */
 .dark .project-list li,
 .dark .experience-list li,
@@ -150,8 +187,19 @@ footer {
 .dark .services-list li strong {
   color: #eee;
 }
-/* --- END ADDED FIX --- */
 
+/* Project Media Dark Mode Overrides */
+.dark .project-media-container {
+    border-color: #444;
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+
+.dark .tech-badge {
+    background-color: #444;
+    color: #eee;
+    border-color: #555;
+}
 
 .dark .nav-links {
   background: #000;
@@ -208,7 +256,6 @@ footer {
   border-radius: 5px;
 }
 
-/* --- ADDED --- */
 /* === What I Offer Section (Homepage) === */
 .services-list {
   list-style-type: none;
@@ -234,7 +281,6 @@ footer {
   margin: 0;
   font-size: 1rem; 
 }
-/* --- END ADDED --- */
 
 
 /* === Work With Me Page === */
@@ -283,9 +329,6 @@ footer {
 #work-with-me a:hover {
   color: #004799;
 }
-
-/* --- DUPLICATE REMOVED --- */
-/* The repeated #work-with-me block was here and has been removed. */
 
 
 /* === Blog Page === */
@@ -340,8 +383,6 @@ footer {
   text-decoration: underline;
   color: #005999;
 }
-/* === End Blog Page === */
-
 
 /* === Form Styles (Mainly Contact) === */
 form {
