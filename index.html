@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mustafa A.Y. Adam - Portfolio</title>
+  <title>Mustafa A.Y. Adam | Process Simulation Engineer</title>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CEL6NWL5QM"></script>
   <script>
@@ -13,277 +13,230 @@
     gtag('config', 'G-CEL6NWL5QM');
   </script>
 
-  <meta name="description" content="Mustafa Ali Yahya Adam – Chemical Engineering Portfolio">
-  <meta name="keywords" content="Mustafa Ali, Chemical Engineering, MATLAB, Python, Projects, GitHub Portfolio">
-  <meta name="author" content="Mustafa Ali Yahya Adam">
-  <meta property="og:title" content="Mustafa A.Y. Adam | Chemical Engineering Portfolio">
-  <meta property="og:description" content="Explore Mustafa's engineering projects, simulations, and academic achievements.">
-  <meta property="og:url" content="https://mustafaeng.tech">
+  <meta name="description" content="Portfolio of Mustafa Ali Yahya Adam – Chemical Engineer specializing in Process Simulation (AVEVA, MATLAB, Python) and Digital Twins.">
+  <meta property="og:title" content="Mustafa A.Y. Adam | Process Simulation Engineer">
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  
-  <style>
-      .project-media-container {
-          margin: 15px 0;
-          border-radius: 8px;
-          overflow: hidden;
-          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-          border: 1px solid #eee;
-      }
-      .project-img {
-          width: 100%;
-          height: auto;
-          display: block;
-          transition: transform 0.3s ease;
-      }
-      .project-img:hover {
-          transform: scale(1.02);
-      }
-      .tech-badge {
-          background-color: #f0f0f0;
-          padding: 2px 8px;
-          border-radius: 4px;
-          font-size: 0.85em;
-          color: #333;
-          border: 1px solid #ccc;
-      }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
 <nav>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">What I Offer</a></li> 
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#resume">Resume</a></li>
-    <li><a href="#certificates">Certificates</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#skills">Toolbox</a></li>
+    <li><a href="#timeline">Journey</a></li>
     <li><a href="blog.html">Blog</a></li>
-    <li><a href="work.html">Work With Me</a></li>
+    <li><a href="#contact" class="btn-nav">Contact Me</a></li>
   </ul>
+  <button id="theme-toggle"><i class="fas fa-moon"></i></button>
 </nav>
 
-<section id="about" data-aos="fade-up">
-  <h2>About Me</h2>
-  <p>
-    Motivated Chemical Engineering Student with strong foundations in process design, simulation, and safety. Passionate about remote collaboration, global quality systems, and sustainable industrial innovation. Skilled in combining engineering and programming to deliver impactful, tech-driven solutions. Experienced in biochemical simulations, pipeline design, and digital tools.
-    Hi, I’m Mustafa Ali Yahya Adam — a Chemical Engineering student at Bolu Abant Izzet Baysal University with a deep passion for sustainable process design, simulation, and tech-driven innovation.<br><br>
-  </p>
-</section>
+<header id="hero" class="hero-section">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Mustafa Ali Yahya Adam</h1>
+    <h2>Chemical Engineer & Simulation Specialist</h2>
+    <p>
+      Transforming complex chemical processes into optimized <strong>Digital Twins</strong> using AVEVA, MATLAB, and Python. 
+      Focused on sustainable energy grids and industrial automation.
+    </p>
+    <div class="hero-btns">
+      <a href="#portfolio" class="btn btn-primary">View My Work</a>
+      <a href="Mustafa_Ali_Yahya_Adam_CV1.pdf" class="btn btn-outline" download>Download CV</a>
+    </div>
+  </div>
+</header>
 
-<section id="services" data-aos="fade-up">
-  <h2><span aria-hidden="true">💡</span> What I Offer</h2>
-  <ul class="services-list">
-    <li>
-      <strong>Process Simulation & Modeling</strong>
-      <p>Using MATLAB, Python, and other tools to model and optimize chemical processes.</p>
-    </li>
-    <li>
-      <strong>Sustainable Process Design</strong>
-      <p>Applying chemical engineering principles to design eco-friendly and efficient systems.</p>
-    </li>
-    <li>
-      <strong>Data Analysis & Visualization</strong>
-      <p>Analyzing process data with Python (Pandas, Matplotlib) to find actionable insights.</p>
-    </li>
-    <li>
-      <strong>Technical Documentation & Research</strong>
-      <p>Conducting in-depth research and providing clear, comprehensive project documentation.</p>
-    </li>
-  </ul>
-</section>
+<section id="portfolio" class="portfolio-section">
+  <div class="section-header" data-aos="fade-up">
+    <h2>Featured Projects</h2>
+    <p>A collection of my simulations, designs, and research.</p>
+  </div>
 
+  <div class="project-card featured-card" data-aos="fade-up">
+    <div class="project-media">
+       <img src="images/safawater-aveva.jpg.png" alt="SafaWater Simulation" class="project-img">
+    </div>
+    <div class="project-info">
+      <span class="badge">Graduation Project</span>
+      <h3>SafaWater Solution™ (Digital Twin)</h3>
+      <p class="tech-stack">
+        <span>AVEVA Process Simulation</span> <span>Python</span> <span>Renewable Energy</span>
+      </p>
+      <p>
+        Designed a comprehensive renewable-powered (Solar/Wind) off-grid water purification system. 
+        Integrated UF-RO technology with battery storage management to optimize energy consumption 
+        and minimize water production costs ($/kg).
+      </p>
+      <a href="blog.html" class="link-arrow">Read Case Study <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
 
-<section id="skills" data-aos="fade-right">
-  <h2><span aria-hidden="true">🛠️</span> Skills</h2>
-  <p>Python, MATLAB, SolidWorks, HTML, CSS, C++, Git, AVEVA Process Simulation</p>
-</section>
-
-<section id="projects" data-aos="zoom-in">
-  <h2><span aria-hidden="true">📁</span> Featured Projects</h2>
-
-  <ul class="project-list">
+  <div class="project-grid">
     
-    <li>
-      <strong><span aria-hidden="true">💧</span> SafaWater Solution™ (Digital Twin)</strong> – Graduation Project – Dec 2025
-      <br><br>
-      
-      <div class="project-media-container">
-          <img src="safawater-aveva.jpg.png" alt="AVEVA Process Simulation of SafaWater Renewable Grid" class="project-img">
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="project-media-small">
+        <img src="images/batch-reactor.jpg" alt="Batch Reactor Simulation" class="project-img">
       </div>
+      <div class="project-info-small">
+        <h3>Batch Reactor Simulation (A→B→C)</h3>
+        <p class="tech-stack"><span>MATLAB</span> <span>Simulink</span></p>
+        <p>Modeled concentration profiles and time-dependent behavior for series reactions to determine optimal conversion times.</p>
+      </div>
+    </div>
 
-      <p><strong>Tech Stack:</strong> <span class="tech-badge">AVEVA Process Simulation</span> <span class="tech-badge">Python</span> <span class="tech-badge">Renewable Energy</span></p>
-      • Designed a comprehensive renewable-powered (Solar/Wind) off-grid water purification system.<br>
-      • Integrated UF-RO technology with battery storage management to optimize energy consumption.<br>
-      • Validated the "Digital Twin" using dynamic simulation to calculate precise water production costs ($/kg).
-      <br><br>
-    </li>
-    <li>
-      <strong><span aria-hidden="true">🧪</span> Syngas Production</strong>    -            University Project – Feb – June 2025  
-      <br><br>
-• Designed a sustainable synthetic gas production process using MATLAB, Excel, and SolidWorks.
-• Applied thermodynamic and reaction engineering principles for optimization.
-• Focused on reaction control, feedstock selection, and catalyst use.
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="project-media-small">
+        <img src="images/syngas-project.jpg" alt="Syngas Production" class="project-img">
+      </div>
+      <div class="project-info-small">
+        <h3>Syngas Production Plant</h3>
+        <p class="tech-stack"><span>SolidWorks</span> <span>Thermodynamics</span></p>
+        <p>Sustainable synthetic gas production process design focusing on reactor control and feedstock selection.</p>
+      </div>
+    </div>
 
-    </li>
-    <li>
-      <strong><span aria-hidden="true">⚙️</span> Petroleum Refinery Pipeline Design</strong> – 
-      <br><br>
-• Optimized pipeline system using Excel, C++, and SolidWorks.
-• Applied fluid mechanics and energy efficiency calculations.
+    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="project-media-small">
+        <img src="images/sharbot-fermentation.jpg" alt="Fermentation Cycle" class="project-img">
+      </div>
+      <div class="project-info-small">
+        <h3>Sharbot Fermentation Model</h3>
+        <p class="tech-stack"><span>Biochemical Eng</span> <span>MATLAB</span></p>
+        <p>Full lifecycle model simulating the transformation of sugar into ethanol and vinegar with pH inhibition logic.</p>
+      </div>
+    </div>
 
-    </li>
-    <li>
-      <strong><span aria-hidden="true">🔥</span> Batch Reactor Simulation</strong> –          University Project – June 2025
-      <br><br>
-• Simulated a series reaction mechanism (A → B → C) using MATLAB and Simulink.
-• Modeled concentration profiles and time-dependent behavior for batch reactor operation.
-• Applied reaction kinetics, ODE solving, and visualization of dynamic systems.
+    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="project-media-small">
+        <img src="images/pipeline-design.jpg" alt="Pipeline Design" class="project-img">
+      </div>
+      <div class="project-info-small">
+        <h3>Refinery Pipeline Optimization</h3>
+        <p class="tech-stack"><span>C++</span> <span>Fluid Mechanics</span></p>
+        <p>Optimized pipeline systems using custom C++ algorithms for head loss and energy efficiency.</p>
+      </div>
+    </div>
 
-    </li>
-    <li>
-      <strong><span aria-hidden="true">🍹</span> Sharbot Fermentation Lifecycle</strong> –    Independent Research - May 2025 - Ongoing 
-      <br><br>
-      • Developed a full biochemical lifecycle model in MATLAB Simulink simulating the transformation of sugar into ethanol and vinegar.
-• Modeled yeast and acetic acid bacteria dynamics, including biomass growth, ethanol production, acetic acid formation, CO₂ release, and pH inhibition.
-• Designed logic to switch between anaerobic - aerobic fermentation stages.
-• Applications include sustainable food production, vinegar design, and bioethanol studies
-
-    </li>
-    <li>
-      <strong><span aria-hidden="true">🌐</span> Portfolio Website</strong> –            Independent 2023
-      <br><br> Fully responsive site with Formspree contact form and blog.
-    </li>
-  </ul>
-
-  <p>🔗 Explore more on my <a href="https://github.com/mustafaChemEng" target="_blank">GitHub</a>.</p>
-</section>
-
-
-<section id="resume" data-aos="fade-left">
-  <h2 id="resume-heading"><span aria-hidden="true">📄</span> Resume</h2>
-  <a href="Mustafa_Ali_Yahya_Adam_CV1.pdf" class="btn" download>Download My Resume</a>
-</section>
-
-
-<section id="certificates" data-aos="fade-right">
-  <h2><span aria-hidden="true">📜</span> Certificates</h2>
-
-  <div class="certificate-category">
-    <h3><span aria-hidden="true">🧪</span> AIChE SACHE Safety Series</h3>
-    <ul>
-      <li>Chemical Process Safety – Fundamentals</li>
-      <li>Runaway Reactions</li>
-      <li>Hazard Recognition</li>
-      <li>Identifying & Minimizing Hazards</li>
-      <li>Chemical Reactivity Hazards</li>
-      <br><br>All completed May–June 2025
-    </ul>
-  </div>
-
-  <div class="certificate-category">
-    <h3><span aria-hidden="true">💻</span> Programming & Engineering</h3>
-    <ul>
-      <li>Programming for Everybody (Coursera)</li>
-      <li>Python Programming (Codezella)</li>
-      <li>Streamlit Dashboards (Coursera)</li>
-      <li>C++ Foundations – Courses 1–5 (Programmingadvices.com)</li>
-      <li>Introduction to PLC and Industrial Automation (LinkedIn Learning)</li>
-    </ul>
-  </div>
-
-  <div class="certificate-category">
-    <h3><span aria-hidden="true">🌐</span> Web & UX</h3>
-    <ul>
-      <li>Introduction to HTML5 (Coursera)</li>
-      <li>Introduction to CSS3 (Coursera)</li>
-      <li>Foundations of UX Design (Coursera)</li>
-    </ul>
-  </div>
-
-  <div class="certificate-category">
-    <h3><span aria-hidden="true">📊</span> Productivity & Office</h3>
-    <ul>
-      <li>Foundations of Project Management (Coursera)</li>
-      <li>Getting Started with Microsoft Office 365 (Coursera)</li>
-    </ul>
-  </div>
-
-  <div class="certificate-category">
-    <h3><span aria-hidden="true">🧠</span> Communication & Training</h3>
-    <ul>
-      <li>English Proficiency Certificate</li>
-      <li>Training of Trainers (TOT)</li>
-      <li>Teaching Training Certificate (TTC)</li>
-      <li>English Club Training Program (2023)</li>
-    </ul>
   </div>
 </section>
 
 
-
-<section id="experience" data-aos="zoom-in">
-  <h2><span aria-hidden="true">📚</span> Experience</h2>
-  <ul class="experience-list">
-    <li>
-      <strong><span aria-hidden="true">💼</span> Albaraka Company</strong>                2021 - 2022
-      <br><br>Managed financial records and supervised logistics operations. Developed early responsibility, communication, and leadership skills.
-    </li>
-    <li>
-      <strong><span aria-hidden="true">🌍</span> I Care-Net</strong> –                   since February 2023
-      <br><br>Active member of an international student-driven community focused on educational outreach and innovation.
-    </li>
-    <li>
-      <strong><span aria-hidden="true">🌱</span> YALI Program Member</strong> –         entrepreneurship 2023
-      <br><br>Completed leadership and professional development training through the Young African Leaders Initiative.
-    </li>
-    <li>
-      <strong><span aria-hidden="true">🧑‍🏫</span> English Club Trainer</strong> –        University Project –   May 2024 
-      <br><br>Led English communication and public speaking sessions, fostering skills in debate, writing, and team engagement.
-    </li>
-    <li>
-      <strong><span aria-hidden="true">✈️</span> Travel Agency Founder</strong> –         entrepreneurship 2023
-      <br><br>Founded and built a travel brand from scratch; designed the website, branding, and client coordination tools.
-    </li>
-    <li>
-      <strong>Products Development & Quality Control Internship</strong> August 2025
-      <br><br> Istanbul Technic Constraction
-    </li>
-    <li>
-      <strong>Research and Development Internship (R&D)</strong> –    Ongoing
-      <br><br> Istanbul Technic Constraction
-    </li>
-  </ul>
+<section id="skills" class="skills-section">
+  <div class="section-header" data-aos="fade-right">
+    <h2>Technical Toolbox</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-category">
+      <i class="fas fa-laptop-code icon"></i>
+      <h3>Simulation & Code</h3>
+      <ul>
+        <li>AVEVA Process Simulation</li>
+        <li>MATLAB & Simulink</li>
+        <li>Python (Pandas, NumPy)</li>
+        <li>C++</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <i class="fas fa-flask icon"></i>
+      <h3>Engineering</h3>
+      <ul>
+        <li>Process Design & P&ID</li>
+        <li>Thermodynamics</li>
+        <li>Reaction Kinetics</li>
+        <li>Industrial Safety (SACHE)</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <i class="fas fa-globe icon"></i>
+      <h3>Web & Tools</h3>
+      <ul>
+        <li>HTML5 / CSS3 / Git</li>
+        <li>SolidWorks</li>
+        <li>Microsoft Office 365</li>
+        <li>Project Management</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 
-<section id="contact" data-aos="fade-up">
-  <h2><span aria-hidden="true">📬</span> Contact Me</h2>
-  <form action="https://formspree.io/f/xpwrkvjr" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-    <input type="hidden" name="_next" value="https://mustafaeng.tech/thanks.html">
+<section id="timeline" class="timeline-section">
+  <div class="section-header" data-aos="fade-left">
+    <h2>My Journey</h2>
+  </div>
+  
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">Ongoing</div>
+      <div class="timeline-content">
+        <h3>R&D Internship</h3>
+        <h4>Istanbul Technic Construction</h4>
+        <p>Focusing on product development and quality control standards.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">Aug 2025</div>
+      <div class="timeline-content">
+        <h3>QC Internship</h3>
+        <h4>Istanbul Technic Construction</h4>
+        <p>Gained hands-on experience in industrial quality assurance and testing protocols.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">May 2025</div>
+      <div class="timeline-content">
+        <h3>AIChE SACHE Safety Certification</h3>
+        <h4>AIChE Academy</h4>
+        <p>Completed 5+ certifications in Process Safety, Runaway Reactions, and Hazard Recognition.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">2023</div>
+      <div class="timeline-content">
+        <h3>Founder & Entrepreneur</h3>
+        <h4>Travel Agency & YALI Member</h4>
+        <p>Founded a travel brand and completed the Young African Leaders Initiative (YALI) training.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" data-aos="zoom-in">
+  <div class="section-header">
+    <h2>Let's Collaborate</h2>
+    <p>Interested in my simulation work or hiring for an Erasmus role?</p>
+  </div>
+  <form action="https://formspree.io/f/xpwrkvjr" method="POST" class="contact-form">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+    <textarea name="message" placeholder="How can I help you?" required></textarea>
+    <button type="submit" class="btn btn-primary">Send Message</button>
   </form>
 </section>
 
 <footer>
-  <p>&copy; <span id="year"></span> Mustafa A.Y. Adam. All rights reserved.</p>
+  <p>&copy; <span id="year"></span> Mustafa A.Y. Adam. Built with Code.</p>
+  <div class="social-links">
+    <a href="https://github.com/mustafaChemEng" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({ duration: 1000, once: true });</script>
+<script>AOS.init({ duration: 800, once: true });</script>
 <script src="script.js"></script>
 </body>
 </html>
-
-
