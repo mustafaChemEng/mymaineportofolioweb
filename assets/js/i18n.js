@@ -54,13 +54,13 @@
       k82: 'Simülasyon işleri', k83: 'İş birliği', k84: 'İngilizce koçluğu',
       k85: 'Proses simülasyonu, serbest çalışma', k86: 'Doğru ve açıklanmış bir modele ihtiyaç duyan mühendisler, girişimler, araştırmacılar ve öğrenci ekipleri için.',
       k87: 'Kararlı hâl ve dinamik modeller',
-      k88: 'AVEVA Process Simulation\'da, uygun olduğunda Aspen HYSYS ve MATLAB/Simulink ile akış şemaları: kütle ve enerji denklikleri, reaktörler, ayırma işlemleri, adsorpsiyon çevrimleri.',
+      k88: 'Python ile kütle ve enerji denklikleri, ekipman boyutlandırma ve dinamik modeller; ya da sizin lisanslı simülatörünüzde (AVEVA Process Simulation, Aspen HYSYS gibi) kurulan akış şemaları.',
       k89: 'Kurulmuş, yakınsamış ve belgelenmiş model', k90: 'Temel denkliklerin elle kontrolü', k91: 'Model dosyası ve kısa bir rapor',
       k92: 'Kontrol döngüleri ve ayarı',
-      k93: 'Dinamik model üzerinde PID döngü tasarımı: ilk prensiplerden tesis kazançları, SIMC ayarı ve bozuculara ve ayar noktası değişimlerine karşı testler.',
+      k93: 'Python\'da ya da sizin simülatörünüzde dinamik model üzerinde PID döngü tasarımı: ilk prensiplerden tesis kazançları, SIMC ayarı ve bozuculara ve ayar noktası değişimlerine karşı testler.',
       k94: 'Hesabı gösterilmiş ayar değerleri', k95: 'Önce ve sonra eğilimleri', k96: 'IAE gibi performans ölçütleri',
       k97: 'Python ile otomasyon ve veri',
-      k98: 'Simülasyonları yöneten Python betikleri: vaka çalışmaları, veritabanına kayıt, canlı panolar ve makine öğrenmesi vekil modelleri.',
+      k98: 'Mühendislik hesapları ve lisanslı simülatörünüzü yönetmek için Python: vaka çalışmaları, veritabanına kayıt, canlı panolar ve makine öğrenmesi vekil modelleri.',
       k99: 'Siz uyurken vakalarınızı çalıştırır', k100: 'Temiz veri ve grafikler', k101: 'Saklayıp yeniden çalıştırabileceğiniz kod',
       k102: 'Isı entegrasyonu', k103: 'Atık ısının hangi yardımcı akımların yerini alabileceğini bulmak için pinch analizi ve ısı değiştirici ağı tasarımı.',
       k104: 'Kompozit eğriler ve hedefler', k105: 'Isı değiştirici ağı önerisi',
@@ -81,7 +81,7 @@
       k131: 'Bu sayfadaki her görsel kendi modellerimden bir ekran görüntüsü ya da grafik. Büyütmek için görsele tıklayın.',
       k132: 'Tümü', k133: 'Kontrol ve dijital ikizler', k134: 'Simülasyon', k135: 'Tesis tasarımı', k136: 'Makine öğrenmesi',
       k137: 'Yaptıklarım ve öğrendiklerim üzerine kısa yazılar.',
-      k138: 'Takım kaptanı, AIChE ChemE-Sports', k139: 'Üniversite takımlarının bir operatör eğitim simülatöründe canlı bir damıtma kolonunu işlettiği, bozucu etkiler ve alarmlar karşısında ürünleri şartnamede ve üniteyi kârlı tuttuğu uluslararası bir yarışma. BAİBÜ takımının 2025 ve 2026\'da kaptanlığını yaptım; ABD, Ekvador ve Bangladeş\'teki üniversitelerin takımlarıyla çevrim içi yarıştık.', k140: 'Yarışma simülatörü: işlettiğimiz operatör ekranı ve 3B sanal tesisi.', x_note: 'Teknik proje ayrıntıları İngilizcedir.', x_run: 'Başlat', x_remove: 'Bozucuyu kaldır', x_pion: 'PI açık', x_manual: 'manuel', x_feed: 'BESLEME'
+      k138: 'Takım kaptanı, AIChE ChemE-Sports', k139: 'Üniversite takımlarının bir operatör eğitim simülatöründe canlı bir damıtma kolonunu işlettiği, bozucu etkiler ve alarmlar karşısında ürünleri şartnamede ve üniteyi kârlı tuttuğu uluslararası bir yarışma. BAİBÜ takımının 2025 ve 2026\'da kaptanlığını yaptım; ABD, Ekvador ve Bangladeş\'teki üniversitelerin takımlarıyla çevrim içi yarıştık.', k140: 'Yarışma simülatörü: işlettiğimiz operatör ekranı ve 3B sanal tesisi.', k141: '<b>Yazılım lisansları hakkında:</b> kendi AVEVA Process Simulation lisansım yalnızca öğrenme ve ticari olmayan çalışmalar içindir; ücretli projelerde asla kullanmam. Ücretli işler Python ve açık kaynak araçlarla ya da sizin lisansladığınız yazılımlarla yapılır.', x_note: 'Teknik proje ayrıntıları İngilizcedir.', x_run: 'Başlat', x_remove: 'Bozucuyu kaldır', x_pion: 'PI açık', x_manual: 'manuel', x_feed: 'BESLEME'
     },
     ar: {
       k0: 'القائمة', k1: 'الرئيسية', k2: 'المشاريع', k3: 'اعمل معي', k4: 'ملاحظات', k5: 'تواصل',
@@ -135,13 +135,13 @@
       k82: 'أعمال المحاكاة', k83: 'التعاون', k84: 'تدريب اللغة الإنجليزية',
       k85: 'محاكاة العمليات، عمل حر', k86: 'للمهندسين والشركات الناشئة والباحثين والفرق الطلابية الذين يحتاجون نموذجًا صحيحًا ومشروحًا.',
       k87: 'نماذج الحالة المستقرة والنماذج الديناميكية',
-      k88: 'مخططات تدفق في AVEVA Process Simulation، مع Aspen HYSYS وMATLAB/Simulink عند الحاجة: موازنات الكتلة والطاقة، والمفاعلات، وعمليات الفصل، ودورات الامتزاز.',
+      k88: 'موازنات الكتلة والطاقة، وتحجيم المعدات، والنماذج الديناميكية بلغة Python، أو مخططات تدفق تُبنى على محاكيك المرخّص مثل AVEVA Process Simulation أو Aspen HYSYS.',
       k89: 'نموذج مبني ومتقارب وموثّق', k90: 'تحقق يدوي من الموازنات الأساسية', k91: 'ملف النموذج مع تقرير موجز',
       k92: 'حلقات التحكم وضبطها',
-      k93: 'تصميم حلقات PID على نموذج ديناميكي: كسب المصنع من المبادئ الأولى، وضبط SIMC، واختبارات أمام الاضطرابات وتغييرات نقطة الضبط.',
+      k93: 'تصميم حلقات PID على نموذج ديناميكي بلغة Python أو على محاكيك: كسب المصنع من المبادئ الأولى، وضبط SIMC، واختبارات أمام الاضطرابات وتغييرات نقطة الضبط.',
       k94: 'قيم الضبط مع خطوات الحساب', k95: 'منحنيات قبل وبعد', k96: 'مؤشرات أداء مثل IAE',
       k97: 'الأتمتة والبيانات بـ Python',
-      k98: 'سكربتات Python تقود المحاكاة: دراسات الحالات، والتسجيل في قاعدة بيانات، ولوحات متابعة حية، ونماذج بديلة بتعلم الآلة.',
+      k98: 'Python للحسابات الهندسية ولقيادة محاكيك المرخّص: دراسات الحالات، والتسجيل في قاعدة بيانات، ولوحات متابعة حية، ونماذج بديلة بتعلم الآلة.',
       k99: 'تشغّل حالاتك وأنت نائم', k100: 'بيانات ورسوم نظيفة', k101: 'كود تحتفظ به وتعيد تشغيله',
       k102: 'التكامل الحراري', k103: 'تحليل Pinch وتصميم شبكات المبادلات الحرارية لمعرفة أين يمكن للحرارة المهدرة أن تحل محل المرافق.',
       k104: 'المنحنيات المركبة والأهداف', k105: 'مقترح لشبكة المبادلات',
@@ -162,7 +162,7 @@
       k131: 'كل صورة في هذه الصفحة لقطة شاشة أو رسم من نماذجي الخاصة. اضغط على أي صورة لتكبيرها.',
       k132: 'الكل', k133: 'التحكم والتوائم الرقمية', k134: 'المحاكاة', k135: 'تصميم المصانع', k136: 'تعلم الآلة',
       k137: 'كتابات قصيرة عمّا بنيته وتعلمته.',
-      k138: 'قائد الفريق، AIChE ChemE-Sports', k139: 'مسابقة دولية تشغّل فيها فرق الجامعات عمود تقطير حيًّا على محاكي تدريب المشغّلين، مع الحفاظ على مواصفات المنتجات وربحية الوحدة رغم الاضطرابات والإنذارات. قدت فريق BAİBÜ في 2025 و2026، ونافسنا عبر الإنترنت فرقًا من جامعات في الولايات المتحدة والإكوادور وبنغلاديش.', k140: 'محاكي المسابقة: شاشة المشغّل التي نديرها، ومصنعها الافتراضي ثلاثي الأبعاد.', x_note: 'تفاصيل المشاريع التقنية مكتوبة بالإنجليزية.', x_run: 'تشغيل', x_remove: 'إزالة الاضطراب', x_pion: 'يعمل', x_manual: 'يدوي', x_feed: 'التغذية'
+      k138: 'قائد الفريق، AIChE ChemE-Sports', k139: 'مسابقة دولية تشغّل فيها فرق الجامعات عمود تقطير حيًّا على محاكي تدريب المشغّلين، مع الحفاظ على مواصفات المنتجات وربحية الوحدة رغم الاضطرابات والإنذارات. قدت فريق BAİBÜ في 2025 و2026، ونافسنا عبر الإنترنت فرقًا من جامعات في الولايات المتحدة والإكوادور وبنغلاديش.', k140: 'محاكي المسابقة: شاشة المشغّل التي نديرها، ومصنعها الافتراضي ثلاثي الأبعاد.', k141: '<b>حول تراخيص البرامج:</b> ترخيص AVEVA Process Simulation الخاص بي مخصص للتعلم والأعمال غير التجارية فقط، لذا لا أستخدمه أبدًا في المشاريع المدفوعة. تُنجز الأعمال المدفوعة بلغة Python والأدوات المفتوحة المصدر، أو على برامج مرخّصة لديك.', x_note: 'تفاصيل المشاريع التقنية مكتوبة بالإنجليزية.', x_run: 'تشغيل', x_remove: 'إزالة الاضطراب', x_pion: 'يعمل', x_manual: 'يدوي', x_feed: 'التغذية'
     }
   };
   const EN = { k23: 'Pause', k24: 'Feed upset +50 kPa', x_note: '', x_run: 'Run', x_remove: 'Remove upset', x_pion: 'PI on', x_manual: 'manual', x_feed: 'FEED' };
