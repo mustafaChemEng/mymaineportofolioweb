@@ -7,13 +7,13 @@
 <meta name="description" content="Process simulation, control and design projects by Mustafa Ali Yahya Adam: digital twin, Power-to-Methane, biogas PSA, green urea, SafaWater and more.">
 <link rel="icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
 
 <nav class="nav"><div class="wrap">
-  <a class="brand" href="index.html">Mustafa <span>Adam</span></a>
+  <a class="brand" href="index.html"><i>MA</i>Mustafa Adam</a>
   <button class="menu" aria-expanded="false" aria-controls="links">Menu</button>
   <div class="links" id="links">
     <a href="index.html">Home</a>
@@ -25,9 +25,9 @@
   </div>
 </div></nav>
 
-<main class="band"><div class="wrap">
+<header class="band page-head"><div class="wrap">
   <h1>Projects</h1>
-  <p class="lead" style="margin-top:12px">Every image on this page is a screenshot or plot from my own models. Click an image to enlarge it.</p>
+  <p class="lead">Every image on this page is a screenshot or plot from my own models. Click any image to enlarge it.</p>
   <div class="filters" role="group" aria-label="Filter projects">
     <button data-f="all" aria-pressed="true">All</button>
     <button data-f="control" aria-pressed="false">Control & digital twins</button>
@@ -35,6 +35,9 @@
     <button data-f="design" aria-pressed="false">Plant design</button>
     <button data-f="ml" aria-pressed="false">Machine learning</button>
   </div>
+</div></header>
+
+<main class="band"><div class="wrap">
 
   <article class="case" id="twin" data-tags="control sim">
     <figure class="shot"><img src="assets/img/twin-closed-loop.webp" alt="Closed-loop plot of tank level, valve opening and flows" loading="lazy"><figcaption>Closed loop: feed-pressure upset at 120 s, set point step at 600 s.</figcaption></figure>
@@ -148,7 +151,7 @@
     </div>
   </article>
 
-  <h2 style="margin-top:40px">Smaller tools</h2>
+  <h2 style="margin-top:56px">Smaller tools</h2>
   <div class="older">
     <div><a href="https://github.com/mustafaChemEng/BatchReactor_AtoBtoC_Simulation">Batch reactor, A → B → C</a><p>MATLAB/Simulink model of series reactions to find the best stopping time.</p></div>
     <div><a href="https://github.com/mustafaChemEng/CSTR-Reactor-Simulation">CSTR simulation</a><p>Python model of reactions in a continuous stirred-tank reactor.</p></div>
@@ -157,7 +160,7 @@
   </div>
 </div></main>
 
-<footer class="band" style="padding-block:20px"><div class="wrap"><span>© <span id="year">2026</span> Mustafa Ali Yahya Adam · Bolu, Türkiye</span><a href="index.html#contact">Contact</a></div></footer>
+<footer class="band" style="padding-block:28px"><div class="wrap"><span>© <span id="year">2026</span> Mustafa Ali Yahya Adam · Bolu, Türkiye</span><a href="index.html#contact">Contact</a></div></footer>
 <script src="assets/js/site.js"></script>
 </body>
 </html>
