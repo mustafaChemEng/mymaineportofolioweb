@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Mustafa Adam</title>
+<meta name="description" content="Process simulation, control and design projects by Mustafa Ali Yahya Adam: digital twin, Power-to-Methane, biogas PSA, green urea, SafaWater and more.">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="index.html">Mustafa <span>Adam</span></a>
+  <button class="menu" aria-expanded="false" aria-controls="links">Menu</button>
+  <div class="links" id="links">
+    <a href="index.html">Home</a>
+    <a href="projects.html" aria-current="page">Projects</a>
+    <a href="index.html#leadership">Leadership</a>
+    <a href="coaching.html">English coaching</a>
+    <a href="blog.html">Notes</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</div></nav>
+
+<main class="band"><div class="wrap">
+  <h1>Projects</h1>
+  <p class="lead" style="margin-top:12px">Every image on this page is a screenshot or plot from my own models. Click an image to enlarge it.</p>
+  <div class="filters" role="group" aria-label="Filter projects">
+    <button data-f="all" aria-pressed="true">All</button>
+    <button data-f="control" aria-pressed="false">Control & digital twins</button>
+    <button data-f="sim" aria-pressed="false">Simulation</button>
+    <button data-f="design" aria-pressed="false">Plant design</button>
+    <button data-f="ml" aria-pressed="false">Machine learning</button>
+  </div>
+
+  <article class="case" id="twin" data-tags="control sim">
+    <figure class="shot"><img src="assets/img/twin-closed-loop.webp" alt="Closed-loop plot of tank level, valve opening and flows" loading="lazy"><figcaption>Closed loop: feed-pressure upset at 120 s, set point step at 600 s.</figcaption></figure>
+    <div>
+      <div class="meta">Personal project · Nov 2026</div>
+      <h2>Python–AVEVA digital twin demonstrator</h2>
+      <ul class="pts">
+        <li>Connected Python to a dynamic AVEVA Process Simulation 2025 model through the .NET Scripting Interface, stepping the plant every 2 s in lock-step.</li>
+        <li>Velocity-form PI level controller with proportional action on the measurement, tuned with SIMC rules from first-principles plant gains (Kc 16.6, τI 264 s).</li>
+        <li>Peak level error after the upset fell from 6.5 cm to 0.8 cm; integral absolute error −86 %; identical results on repeat runs.</li>
+        <li>Every step logged to SQLite, with a live matplotlib dashboard and a Streamlit browser dashboard.</li>
+      </ul>
+      <div class="tags"><span>AVEVA Scripting Interface</span><span>Python</span><span>PI control</span><span>SQLite</span></div>
+      <div class="btns"><a class="btn" href="https://github.com/mustafaChemEng/aps-python-digital-twin">GitHub</a><a class="btn" href="index.html#twin">Watch the run</a></div>
+    </div>
+  </article>
+
+  <article class="case" id="ptm" data-tags="sim design ml">
+    <figure class="shot"><img src="assets/img/ptm-flowsheet.webp" alt="AVEVA Process Simulation flowsheet of the Power-to-Methane plant with electrolyser, compressors, four methanation reactors and utility headers" loading="lazy"><figcaption>Full plant flowsheet in AVEVA Process Simulation.</figcaption></figure>
+    <div>
+      <div class="meta">Graduation Project II · team of 3 · supervisors Prof. Turgay Pekdemir, Prof. Kadir Geliş</div>
+      <h2>Power-to-Methane plant: DAC, heat integration and ML optimisation</h2>
+      <ul class="pts">
+        <li>Built the full AVEVA model of a 10,000 Nm³/h synthetic-methane plant: alkaline electrolyser, DAC-TVSA CO₂ capture, three-stage compression and four adiabatic methanation reactors (Peng–Robinson), starting from the team's Excel material balance.</li>
+        <li>Modelled the CO₂ capture unit as a two-bed, three-layer TVSA (alumina, silica gel, amine-silica) with LDF kinetics and dual-site Langmuir isotherms; cyclic steady state in about 10 cycles, ~505 kmol/h CO₂.</li>
+        <li>Designed a 14-exchanger network by pinch analysis (ΔTmin 10 °C), using reactor and compressor waste heat for feed preheating and DAC regeneration.</li>
+        <li>Trained an XGBoost surrogate on 363 simulation cases: 25 bar and 80 °C intercooling cut compressor power from 12.11 to 11.71 MW at 98.5 % CH₄.</li>
+      </ul>
+      <p class="callout"><b>Safety finding:</b> the case-study data showed Reactor 1 outlet temperatures of 925–960 °C against a 620 °C catalyst limit. I traced it to the recycle split, which means the recycle loop needs tight control.</p>
+      <div class="tags"><span>AVEVA</span><span>Adsorption</span><span>Pinch analysis</span><span>XGBoost</span></div>
+      <div class="btns"><a class="btn" href="https://github.com/mustafaChemEng/PtM-Thermal-ML-Optimization">GitHub</a></div>
+    </div>
+  </article>
+
+  <article class="case text" id="psa" data-tags="sim control">
+    <div>
+      <div class="meta">Graduation Project I · supervisor Dr Özlem Ateş Duru · Jan 2026</div>
+      <h2>Biogas upgrading PSA: dynamic model for a digital twin</h2>
+      <p>Raw biogas is about 60 % methane and 40 % CO₂. A pressure swing adsorption unit takes the CO₂ out on zeolite while two beds take turns adsorbing and regenerating.</p>
+    </div>
+    <div>
+      <ul class="pts">
+        <li>Built a two-bed Skarstrom PSA model in AVEVA for CH₄/CO₂ (60/40) on zeolite 13X: LDF kinetics, extended Langmuir isotherms, Ergun pressure drop; 8 bar adsorption, about 1 bar blowdown.</li>
+        <li>Reached cyclic steady state and confirmed in MATLAB a global mass-balance error below 0.2 % after about 40 cycles; analysed CO₂ breakthrough and bed working capacity.</li>
+        <li>Set up NSGA-II optimisation of purity, recovery and energy as the next stage, to run through the Python–AVEVA bridge.</li>
+      </ul>
+      <div class="tags"><span>AVEVA</span><span>PSA</span><span>MATLAB</span></div>
+    </div>
+  </article>
+
+  <article class="case text" id="urea" data-tags="design sim">
+    <div>
+      <div class="meta">Design III · team of 5 · supervisor Prof. Dr. Musa Büyükada</div>
+      <h2>Green urea plant design</h2>
+      <p>A 1,000 t/d urea plant at Aliağa, İzmir, using captured CO₂ and green ammonia in the Bosch–Meiser process.</p>
+    </div>
+    <div>
+      <ul class="pts">
+        <li>Built the full AVEVA simulation: CO₂ compression, NH₃ pumping, high-pressure synthesis loop, vacuum evaporation and prilling.</li>
+        <li>A teammate built the Aspen Plus version of the same plant.</li>
+      </ul>
+      <div class="tags"><span>AVEVA</span><span>Plant design</span></div>
+    </div>
+  </article>
+
+  <article class="case" id="safawater" data-tags="sim design">
+    <figure class="shot"><img src="assets/img/safawater-aveva.webp" alt="AVEVA flowsheet of solar panels, wind turbines and a battery powering an ultrafiltration and reverse osmosis train" loading="lazy"><figcaption>Power and water sides in one AVEVA model.</figcaption></figure>
+    <div>
+      <div class="meta">Clean-technology venture</div>
+      <h2>SafaWater: off-grid water purification</h2>
+      <p>A concept for communities without a reliable grid: ultrafiltration and reverse osmosis powered by solar panels and wind turbines, with battery storage.</p>
+      <ul class="pts">
+        <li>Modelled the power network and the UF–RO train together in AVEVA Process Simulation.</li>
+        <li>In this case the model turns 2,222 kg/h of feed water into about 1,050 kg/h of permeate.</li>
+      </ul>
+      <div class="tags"><span>AVEVA</span><span>Membranes</span><span>Renewables</span></div>
+    </div>
+  </article>
+
+  <article class="case text" id="biosmr" data-tags="design">
+    <div>
+      <div class="meta">Co-author</div>
+      <h2>Bio-SMR hydrogen from cattle manure</h2>
+      <p>Techno-economic and life cycle assessment of a hydrogen plant processing 1,045,400 t/year of cattle manure.</p>
+    </div>
+    <div>
+      <ul class="pts">
+        <li>Six-step mitigation strategy (ORC exergy recovery, BECCS) reaching −9.17 kg CO₂-eq/kg H₂ and removing over 108,900 t CO₂/year.</li>
+      </ul>
+      <div class="tags"><span>TEA</span><span>LCA</span><span>BECCS</span></div>
+    </div>
+  </article>
+
+  <article class="case" id="sharbot" data-tags="sim">
+    <figure class="shot"><img src="assets/img/sharbot-simulink.webp" alt="Simulink block diagram of the Sharbot fermentation model" loading="lazy"><figcaption>Simulink model: yeast and acetic-acid bacteria growth, ethanol, acetic acid, CO₂ and pH.</figcaption></figure>
+    <div>
+      <div class="meta">May – Jul 2025</div>
+      <h2>Sharbot fermentation lifecycle model</h2>
+      <p>A dynamic model of sugar → ethanol → vinegar in MATLAB/Simulink, with Monod growth, CO₂ release, pH inhibition and the switch from anaerobic to aerobic stages.</p>
+      <figure class="shot" style="margin-top:12px"><img src="assets/img/sharbot-scope.webp" alt="Simulink scope showing concentrations and pH over time" loading="lazy"><figcaption>Product and pH trajectories.</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="case" id="syngas" data-tags="sim design">
+    <figure class="shot"><img src="assets/img/syngas-aveva.webp" alt="AVEVA flowsheet of syngas cooling, knock-out drum, absorber and PSA for hydrogen recovery" loading="lazy"><figcaption>Downstream train in AVEVA: cooler, knock-out drum, absorber and PSA.</figcaption></figure>
+    <div>
+      <div class="meta">Design I and II</div>
+      <h2>Syngas purification and hydrogen recovery</h2>
+      <p>Downstream separation for syngas from small-scale steam reforming of cattle manure: gas cooling, water knock-out, CO₂ absorption and PSA to a hydrogen product.</p>
+      <div class="btns"><a class="btn" href="https://github.com/mustafaChemEng/Syngas-Production-Process">GitHub</a></div>
+    </div>
+  </article>
+
+  <h2 style="margin-top:40px">Smaller tools</h2>
+  <div class="older">
+    <div><a href="https://github.com/mustafaChemEng/BatchReactor_AtoBtoC_Simulation">Batch reactor, A → B → C</a><p>MATLAB/Simulink model of series reactions to find the best stopping time.</p></div>
+    <div><a href="https://github.com/mustafaChemEng/CSTR-Reactor-Simulation">CSTR simulation</a><p>Python model of reactions in a continuous stirred-tank reactor.</p></div>
+    <div><a href="https://github.com/mustafaChemEng/Crude-Oil-Pipeline-System-Design">Crude oil pipeline design</a><p>C++ program that picks the optimum pipe diameter and pump for a refinery crude line.</p></div>
+    <div><a href="https://github.com/mustafaChemEng/green-hydrogen-toolbox">Green hydrogen toolbox</a><p>Streamlit app with modules for renewable power, electrolyser sizing and water cost.</p></div>
+  </div>
+</div></main>
+
+<footer class="band" style="padding-block:20px"><div class="wrap"><span>© <span id="year">2026</span> Mustafa Ali Yahya Adam · Bolu, Türkiye</span><a href="index.html#contact">Contact</a></div></footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
