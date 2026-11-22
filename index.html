@@ -1,161 +1,154 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mustafa Adam | Process Simulation & Digital Twins</title>
-<meta name="description" content="Mustafa Ali Yahya Adam, final-year chemical engineering student building dynamic process models, closed-loop control and digital twins with AVEVA Process Simulation and Python.">
-<meta property="og:title" content="Mustafa Ali Yahya Adam: process simulation and digital twins">
-<meta property="og:description" content="Dynamic AVEVA models with Python closed-loop control, plant-scale flowsheets and ML optimisation.">
-<meta property="og:image" content="https://mustafaeng.tech/assets/img/twin-poster.webp">
-<meta property="og:url" content="https://mustafaeng.tech/">
-<link rel="icon" href="favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Mustafa Adam | Process Simulation &amp; Digital Twins</title>
+<meta content="Mustafa Ali Yahya Adam, final-year chemical engineering student building dynamic process models, closed-loop control and digital twins with AVEVA Process Simulation and Python." name="description"/>
+<meta content="Mustafa Ali Yahya Adam: process simulation and digital twins" property="og:title"/>
+<meta content="Dynamic AVEVA models with Python closed-loop control, plant-scale flowsheets and ML optimisation." property="og:description"/>
+<meta content="https://mustafaeng.tech/assets/img/twin-poster.webp" property="og:image"/>
+<meta content="https://mustafaeng.tech/" property="og:url"/>
+<link href="favicon.ico" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/site.css" rel="stylesheet"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mustafa Ali Yahya Adam","url":"https://mustafaeng.tech/","jobTitle":"Chemical Engineering Student","alumniOf":"Bolu Abant İzzet Baysal University","knowsAbout":["Process simulation","Digital twins","Process control","AVEVA Process Simulation","Python"],"sameAs":["https://github.com/mustafaChemEng","https://www.linkedin.com/in/mustafa-adam-2b5624257"]}</script>
 </head>
 <body>
-
 <nav class="nav"><div class="wrap">
-  <a class="brand" href="index.html"><i>MA</i>Mustafa Adam</a>
-  <button class="menu" aria-expanded="false" aria-controls="links">Menu</button>
-  <div class="links" id="links">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="work.html">Work with me</a>
-    <a href="blog.html">Notes</a>
-    <a href="#contact">Contact</a>
-  </div>
+<a class="brand" href="index.html"><i>MA</i>Mustafa Adam</a>
+<div class="lang" role="group" aria-label="Language"><button data-l="en" aria-pressed="true">EN</button><button data-l="tr" aria-pressed="false">TR</button><button data-l="ar" aria-pressed="false" lang="ar">ع</button></div><button aria-controls="links" aria-expanded="false" class="menu" data-i18n="k0">Menu</button>
+<div class="links" id="links">
+<a aria-current="page" data-i18n="k1" href="index.html">Home</a>
+<a data-i18n="k2" href="projects.html">Projects</a>
+<a data-i18n="k3" href="work.html">Work with me</a>
+<a data-i18n="k4" href="blog.html">Notes</a>
+<a data-i18n="k5" href="#contact">Contact</a>
+</div>
 </div></nav>
-
 <header class="band hero"><div class="wrap">
-  <div class="status"><b></b>Graduating early 2027 · open to roles, freelance simulation and collaboration</div>
-  <div class="hero-top">
-    <div>
-      <h1>Mustafa Ali<br><span class="grad">Yahya Adam</span></h1>
-      <p class="role">Process simulation, control and digital twins. I make plant models behave like plants.</p>
-    </div>
-    <div>
-      <p class="lead">Final-year chemical engineering student at BAİBÜ, Türkiye. I build dynamic models in AVEVA Process Simulation and close control loops around them with Python.</p>
-      <div class="btns">
-        <a class="btn solid" href="projects.html">See the projects</a>
-        <a class="btn ghost" href="work.html">Work with me</a>
-        <a class="btn ghost" href="assets/Mustafa_Adam_CV.pdf">CV</a>
-      </div>
-    </div>
-  </div>
-
-  <section class="sim" id="sim" aria-label="Interactive level control simulator">
-    <div class="sim-top"><h2>Try my level controller</h2><p>Live in your browser. Hit the feed with an upset, move the set point, switch the controller off.</p></div>
-    <div class="sim-body">
-      <div class="plant"><svg viewBox="0 0 300 285" role="img" aria-label="Tank with feed, outlet valve V2 and level controller LIC"></svg></div>
-      <div class="trend"><canvas aria-label="Trend of tank level, set point and valve opening over the last 1200 seconds"></canvas>
-        <div class="legend"><span><i style="background:linear-gradient(90deg,#3d6bff,#43c6e0)"></i>Level</span><span><i style="background:#fff"></i>Set point</span><span><i style="background:#2bd17e"></i>Valve opening</span></div></div>
-    </div>
-    <div class="readout">
-      <div><b id="rT">0 s</b><span>simulated time</span></div>
-      <div><b id="rL">50.0 %</b><span>tank level</span></div>
-      <div><b id="rE">0.0 cm</b><span>error from set point</span></div>
-      <div><b id="rV">69 %</b><span>valve V2 opening</span></div>
-      <div><b id="rF">0.976</b><span>feed, kg/s</span></div>
-      <div><b id="rI">0.0</b><span>integral abs. error</span></div>
-    </div>
-    <div class="controls">
-      <button class="ctl" id="simRun">Pause</button>
-      <button class="ctl warn" id="simUpset">Feed upset +50 kPa</button>
-      <label class="switch"><input type="checkbox" id="simPI" checked>PI controller</label>
-      <label class="sp" for="simSP">Set point <input type="range" id="simSP" min="0.4" max="0.7" step="0.01" value="0.5"><output id="simSPout">0.50</output></label>
-      <button class="ctl" id="simReset">Reset</button>
-    </div>
-    <p class="sim-note">A browser replica of my AVEVA tank model with the same PI tuning (Kc 16.6, τI 264 s, 2 s step). It reproduces the AVEVA results to within a few percent: 0.75 cm peak error with the controller, 6.4 cm without. Runs 20× faster than real time.</p>
-  </section>
+<div class="status" data-i18n="k6"><b></b>Graduating early 2027 · open to roles, freelance simulation and collaboration</div>
+<div class="hero-top">
+<div>
+<h1 data-i18n="k7">Mustafa Ali<br/><span class="grad">Yahya Adam</span></h1>
+<p class="role" data-i18n="k8">Process simulation, control and digital twins. I make plant models behave like plants.</p>
+</div>
+<div>
+<p class="lead" data-i18n="k9">Final-year chemical engineering student at BAİBÜ, Türkiye. I build dynamic models in AVEVA Process Simulation and close control loops around them with Python.</p>
+<div class="btns">
+<a class="btn solid" data-i18n="k10" href="projects.html">See the projects</a>
+<a class="btn ghost" data-i18n="k3" href="work.html">Work with me</a>
+<a class="btn ghost" data-i18n="k11" href="assets/Mustafa_Adam_CV.pdf">CV</a>
+</div>
+</div>
+</div>
+<section aria-label="Interactive level control simulator" class="sim" id="sim">
+<div class="sim-top"><h2 data-i18n="k12">Try my level controller</h2><p data-i18n="k13">Live in your browser. Hit the feed with an upset, move the set point, switch the controller off.</p></div>
+<div class="sim-body">
+<div class="plant"><svg aria-label="Tank with feed, outlet valve V2 and level controller LIC" role="img" viewbox="0 0 300 285"></svg></div>
+<div class="trend"><canvas aria-label="Trend of tank level, set point and valve opening over the last 1200 seconds"></canvas>
+<div class="legend"><span data-i18n="k14"><i style="background:linear-gradient(90deg,#3d6bff,#43c6e0)"></i>Level</span><span data-i18n="k15"><i style="background:#fff"></i>Set point</span><span data-i18n="k16"><i style="background:#2bd17e"></i>Valve opening</span></div></div>
+</div>
+<div class="readout">
+<div><b id="rT">0 s</b><span data-i18n="k17">simulated time</span></div>
+<div><b id="rL">50.0 %</b><span data-i18n="k18">tank level</span></div>
+<div><b id="rE">0.0 cm</b><span data-i18n="k19">error from set point</span></div>
+<div><b id="rV">69 %</b><span data-i18n="k20">valve V2 opening</span></div>
+<div><b id="rF">0.976</b><span data-i18n="k21">feed, kg/s</span></div>
+<div><b id="rI">0.0</b><span data-i18n="k22">integral abs. error</span></div>
+</div>
+<div class="controls">
+<button class="ctl" id="simRun">Pause</button>
+<button class="ctl warn" id="simUpset">Feed upset +50 kPa</button>
+<label class="switch"><input checked="" id="simPI" type="checkbox"/><span data-i18n="k25">PI controller</span></label>
+<label class="sp" for="simSP"><span data-i18n="k26">Set point</span> <input id="simSP" max="0.7" min="0.4" step="0.01" type="range" value="0.5"/><output id="simSPout">0.50</output></label>
+<button class="ctl" data-i18n="k27" id="simReset">Reset</button>
+</div>
+<p class="sim-note" data-i18n="k28">A browser replica of my AVEVA tank model with the same PI tuning (Kc 16.6, τI 264 s, 2 s step). It reproduces the AVEVA results to within a few percent: 0.75 cm peak error with the controller, 6.4 cm without. Runs 20× faster than real time.</p>
+</section>
 </div></header>
-
-<section id="twin" class="band room"><div class="wrap">
-  <div class="head">
-    <h2>The real thing: Python driving AVEVA</h2>
-    <p class="lead" style="max-width:52ch">The simulator above is the replica. This is the original: Python stepping the AVEVA model every 2 s through the Scripting Interface and logging each step to SQLite.</p>
-  </div>
-  <figure class="monitor">
-    <div class="bar"><i></i><i></i><i></i><span>closed_loop_run · AVEVA 2025 ↔ Python ↔ SQLite</span></div>
-    <video src="assets/media/digital_twin_screen.mp4" poster="assets/img/twin-poster.webp" controls muted playsinline preload="none" aria-label="Screen recording: Python stepping a dynamic AVEVA Process Simulation tank model with a PI controller while a live dashboard plots level, valve and flows."></video>
-    <figcaption>A real run, time-lapsed: live dashboard (left), AVEVA model (top right), Python loop (bottom right).</figcaption>
-  </figure>
-  <div class="kpis">
-    <div class="kpi"><b>6.5 → 0.8 cm</b><span>peak level error after a feed-pressure upset</span></div>
-    <div class="kpi"><b>−86 %</b><span>integral absolute error in the upset window</span></div>
-    <div class="kpi"><b>2 s</b><span>control step, lock-step with the model</span></div>
-    <div class="kpi"><b>100 %</b><span>repeatable: identical results run after run</span></div>
-  </div>
-  <div class="duo">
-    <figure class="plot"><img src="assets/img/twin-open-loop.webp" alt="Open-loop run: the valve stays fixed and the tank level drifts after the feed pressure rises." loading="lazy"><figcaption><b style="background:#ef4444"></b>AVEVA, valve fixed: the level drifts after the upset at 120 s.</figcaption></figure>
-    <figure class="plot"><img src="assets/img/twin-closed-loop.webp" alt="Closed-loop run: the PI controller opens the valve and holds the level, then tracks a set point step at 600 s." loading="lazy"><figcaption><b style="background:#2bd17e"></b>AVEVA, PI on: the level holds, then follows the set point step at 600 s.</figcaption></figure>
-  </div>
-  <p style="margin-top:22px">An honest label: this is a demonstrator. The plant is the simulation itself, and the same loop is built to take real sensor data next.</p>
-  <div class="btns"><a class="btn ghost" href="https://github.com/mustafaChemEng/aps-python-digital-twin">Code and results on GitHub →</a></div>
+<section class="band room" id="twin"><div class="wrap">
+<div class="head">
+<h2 data-i18n="k29">The real thing: Python driving AVEVA</h2>
+<p class="lead" data-i18n="k30" style="max-width:52ch">The simulator above is the replica. This is the original: Python stepping the AVEVA model every 2 s through the Scripting Interface and logging each step to SQLite.</p>
+</div>
+<figure class="monitor">
+<div class="bar"><i></i><i></i><i></i><span>closed_loop_run · AVEVA 2025 ↔ Python ↔ SQLite</span></div>
+<video aria-label="Screen recording: Python stepping a dynamic AVEVA Process Simulation tank model with a PI controller while a live dashboard plots level, valve and flows." controls="" muted="" playsinline="" poster="assets/img/twin-poster.webp" preload="none" src="assets/media/digital_twin_screen.mp4"></video>
+<figcaption data-i18n="k31">A real run, time-lapsed: live dashboard (left), AVEVA model (top right), Python loop (bottom right).</figcaption>
+</figure>
+<div class="kpis">
+<div class="kpi"><b>6.5 → 0.8 cm</b><span data-i18n="k32">peak level error after a feed-pressure upset</span></div>
+<div class="kpi"><b>−86 %</b><span data-i18n="k33">integral absolute error in the upset window</span></div>
+<div class="kpi"><b>2 s</b><span data-i18n="k34">control step, lock-step with the model</span></div>
+<div class="kpi"><b>100 %</b><span data-i18n="k35">repeatable: identical results run after run</span></div>
+</div>
+<div class="duo">
+<figure class="plot"><img alt="Open-loop run: the valve stays fixed and the tank level drifts after the feed pressure rises." loading="lazy" src="assets/img/twin-open-loop.webp"/><figcaption data-i18n="k36"><b style="background:#ef4444"></b>AVEVA, valve fixed: the level drifts after the upset at 120 s.</figcaption></figure>
+<figure class="plot"><img alt="Closed-loop run: the PI controller opens the valve and holds the level, then tracks a set point step at 600 s." loading="lazy" src="assets/img/twin-closed-loop.webp"/><figcaption data-i18n="k37"><b style="background:#2bd17e"></b>AVEVA, PI on: the level holds, then follows the set point step at 600 s.</figcaption></figure>
+</div>
+<p data-i18n="k38" style="margin-top:22px">An honest label: this is a demonstrator. The plant is the simulation itself, and the same loop is built to take real sensor data next.</p>
+<div class="btns"><a class="btn ghost" data-i18n="k39" href="https://github.com/mustafaChemEng/aps-python-digital-twin">Code and results on GitHub →</a></div>
 </div></section>
-
 <section class="band"><div class="wrap">
-  <div class="head">
-    <div><h2>Selected projects</h2><p class="lead">Plant-scale models, built in AVEVA and checked by hand.</p></div>
-    <a class="btn" href="projects.html">All projects →</a>
-  </div>
-  <div class="cards">
-    <a class="card" href="projects.html#ptm"><div class="img"><img src="assets/img/ptm-flowsheet.webp" alt="AVEVA flowsheet of the Power-to-Methane plant" loading="lazy"></div><div class="body"><span class="chip">Graduation Project II</span><h3>Power-to-Methane plant</h3><p>10,000 Nm³/h synthetic methane: electrolyser, direct air capture, four methanation reactors, heat integration and an XGBoost surrogate.</p><span class="more">Read the case →</span></div></a>
-    <a class="card feature" href="projects.html#psa"><div class="img"><div class="beds" aria-hidden="true"><span style="--h:78%"></span><span style="--h:22%"></span></div></div><div class="body"><span class="chip">Graduation Project I</span><h3>Biogas upgrading PSA</h3><p>Two-bed Skarstrom PSA on zeolite 13X, run to cyclic steady state with a mass-balance error below 0.2 %.</p><span class="more">Read the case →</span></div></a>
-    <a class="card" href="projects.html#safawater"><div class="img"><img src="assets/img/safawater-aveva.webp" alt="AVEVA flowsheet of the SafaWater solar and wind powered UF-RO unit" loading="lazy"></div><div class="body"><span class="chip">Venture</span><h3>SafaWater: off-grid water</h3><p>Solar, wind and battery storage powering a UF–RO train, solved together in one AVEVA model.</p><span class="more">Read the case →</span></div></a>
-  </div>
+<div class="head">
+<div><h2 data-i18n="k40">Selected projects</h2><p class="lead" data-i18n="k41">Plant-scale models, built in AVEVA and checked by hand.</p></div>
+<a class="btn" data-i18n="k42" href="projects.html">All projects →</a>
+</div>
+<div class="cards">
+<a class="card" href="projects.html#ptm"><div class="img"><img alt="AVEVA flowsheet of the Power-to-Methane plant" loading="lazy" src="assets/img/ptm-flowsheet.webp"/></div><div class="body"><span class="chip" data-i18n="k43">Graduation Project II</span><h3 data-i18n="k44">Power-to-Methane plant</h3><p data-i18n="k45">10,000 Nm³/h synthetic methane: electrolyser, direct air capture, four methanation reactors, heat integration and an XGBoost surrogate.</p><span class="more" data-i18n="k46">Read the case →</span></div></a>
+<a class="card feature" href="projects.html#psa"><div class="img"><div aria-hidden="true" class="beds"><span style="--h:78%"></span><span style="--h:22%"></span></div></div><div class="body"><span class="chip" data-i18n="k47">Graduation Project I</span><h3 data-i18n="k48">Biogas upgrading PSA</h3><p data-i18n="k49">Two-bed Skarstrom PSA on zeolite 13X, run to cyclic steady state with a mass-balance error below 0.2 %.</p><span class="more" data-i18n="k46">Read the case →</span></div></a>
+<a class="card" href="projects.html#safawater"><div class="img"><img alt="AVEVA flowsheet of the SafaWater solar and wind powered UF-RO unit" loading="lazy" src="assets/img/safawater-aveva.webp"/></div><div class="body"><span class="chip" data-i18n="k50">Venture</span><h3 data-i18n="k51">SafaWater: off-grid water</h3><p data-i18n="k52">Solar, wind and battery storage powering a UF–RO train, solved together in one AVEVA model.</p><span class="more" data-i18n="k46">Read the case →</span></div></a>
+</div>
 </div></section>
-
-<section id="leadership" class="band alt"><div class="wrap">
-  <h2>Leadership</h2>
-  <p class="lead">I build teams, win funding and deliver.</p>
-  <div class="people">
-    <figure class="photo"><span class="frame"><img src="assets/img/aiche-orientation.webp" alt="Mustafa presenting the AIChE BAİBÜ Student Chapter to students in a university auditorium" loading="lazy"></span><figcaption>Presenting the chapter at the faculty orientation programme.</figcaption></figure>
-    <div>
-      <span class="when">2025 – present</span>
-      <h3>Founding President, AIChE BAİBÜ Student Chapter</h3>
-      <p>I established the university's first official AIChE chapter, lead its executive board and run professional development events.</p>
-      <p>Team captain in the international AIChE ChemE-Sports distillation control competition, 2025 and 2026.</p>
-    </div>
-  </div>
-  <div class="people flip">
-    <figure class="photo"><span class="frame"><img src="assets/img/plastifay-visit.webp" alt="Students in hard hats and safety vests outside the GEBKİM Plastifay plant" loading="lazy"></span><figcaption>Technical visit to the GEBKİM Plastifay plant.</figcaption></figure>
-    <div>
-      <span class="when">2025 – 2026</span>
-      <h3>Project coordinator, two ÜNİDES-funded projects</h3>
-      <p>Funded by the T.R. Ministry of Youth and Sports. I wrote both proposals, secured the funding and led the team on budget, timeline and Ministry reporting.</p>
-      <ul class="pts">
-        <li><b>Future Engineers Digital Twin Summit</b> (completed): AVEVA licences for up to 100 students, a masterclass with a French industrial simulation expert, and plant visits to ASSAN and GEBKİM Plastifay; 38 participants.</li>
-        <li><b>Climate Digital Twin Hackathon for COP31</b> (75,000 TL approved): AVEVA and Python training camp for 20 students and a 48-hour hackathon building waste-to-hydrogen digital twin dashboards.</li>
-      </ul>
-    </div>
-  </div>
+<section class="band alt" id="leadership"><div class="wrap">
+<h2 data-i18n="k53">Leadership</h2>
+<p class="lead" data-i18n="k54">I build teams, win funding and deliver.</p>
+<div class="people">
+<figure class="photo"><span class="frame"><img alt="Mustafa presenting the AIChE BAİBÜ Student Chapter to students in a university auditorium" loading="lazy" src="assets/img/aiche-orientation.webp"/></span><figcaption data-i18n="k55">Presenting the chapter at the faculty orientation programme.</figcaption></figure>
+<div>
+<span class="when" data-i18n="k56">2025 – present</span>
+<h3 data-i18n="k57">Founding President, AIChE BAİBÜ Student Chapter</h3>
+<p data-i18n="k58">I established the university's first official AIChE chapter, lead its executive board and run professional development events.</p>
+<p data-i18n="k59">Team captain in the international AIChE ChemE-Sports distillation control competition, 2025 and 2026.</p>
+</div>
+</div>
+<div class="people flip">
+<figure class="photo"><span class="frame"><img alt="Students in hard hats and safety vests outside the GEBKİM Plastifay plant" loading="lazy" src="assets/img/plastifay-visit.webp"/></span><figcaption data-i18n="k60">Technical visit to the GEBKİM Plastifay plant.</figcaption></figure>
+<div>
+<span class="when">2025 – 2026</span>
+<h3 data-i18n="k61">Project coordinator, two ÜNİDES-funded projects</h3>
+<p data-i18n="k62">Funded by the T.R. Ministry of Youth and Sports. I wrote both proposals, secured the funding and led the team on budget, timeline and Ministry reporting.</p>
+<ul class="pts">
+<li data-i18n="k63"><b>Future Engineers Digital Twin Summit</b> (completed): AVEVA licences for up to 100 students, a masterclass with a French industrial simulation expert, and plant visits to ASSAN and GEBKİM Plastifay; 38 participants.</li>
+<li data-i18n="k64"><b>Climate Digital Twin Hackathon for COP31</b> (75,000 TL approved): AVEVA and Python training camp for 20 students and a 48-hour hackathon building waste-to-hydrogen digital twin dashboards.</li>
+</ul>
+</div>
+</div>
 </div></section>
-
 <section class="band"><div class="wrap">
-  <h2>Tools and training</h2>
-  <div class="skills">
-    <div class="skill"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#eef2ff"/><rect x="12" y="10" width="10" height="20" rx="5" fill="none" stroke="#3d6bff" stroke-width="2.2"/><path d="M22 24h7" stroke="#3d6bff" stroke-width="2.2"/><circle cx="30" cy="15" r="3.5" fill="none" stroke="#43c6e0" stroke-width="2"/></svg><h3>Simulation and control</h3><p>AVEVA Process Simulation (20+ official AVEVA courses), Aspen HYSYS, MATLAB and Simulink, PID tuning, dynamic modelling.</p></div>
-    <div class="skill"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#eef2ff"/><path d="M16 14l-6 6 6 6M24 14l6 6-6 6" fill="none" stroke="#3d6bff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Programming</h3><p>Python for control, data and machine learning (SQLite, Streamlit, XGBoost); C++ through the ProgrammingAdvices roadmap; Git.</p></div>
-    <div class="skill"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#eef2ff"/><path d="M20 10l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10v-6z" fill="none" stroke="#3d6bff" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 20l3 3 5-6" fill="none" stroke="#43c6e0" stroke-width="2.2" stroke-linecap="round"/></svg><h3>Process safety</h3><p>AIChE courses in process safety, runaway reactions, hazard recognition and chemical reactivity, continuing through the 38-course series.</p></div>
-    <div class="skill"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#eef2ff"/><path d="M10 29C15 27 17 15 30 11" fill="none" stroke="#ef4444" stroke-width="2.2" stroke-linecap="round"/><path d="M10 31C18 30 20 21 30 18" fill="none" stroke="#3d6bff" stroke-width="2.2" stroke-linecap="round"/></svg><h3>Analysis</h3><p>Pinch analysis and heat exchanger networks, techno-economic analysis, life cycle assessment.</p></div>
-  </div>
+<h2 data-i18n="k65">Tools and training</h2>
+<div class="skills">
+<div class="skill"><svg aria-hidden="true" viewbox="0 0 40 40"><rect fill="#eef2ff" height="40" rx="12" width="40"></rect><rect fill="none" height="20" rx="5" stroke="#3d6bff" stroke-width="2.2" width="10" x="12" y="10"></rect><path d="M22 24h7" stroke="#3d6bff" stroke-width="2.2"></path><circle cx="30" cy="15" fill="none" r="3.5" stroke="#43c6e0" stroke-width="2"></circle></svg><h3 data-i18n="k66">Simulation and control</h3><p data-i18n="k67">AVEVA Process Simulation (20+ official AVEVA courses), Aspen HYSYS, MATLAB and Simulink, PID tuning, dynamic modelling.</p></div>
+<div class="skill"><svg aria-hidden="true" viewbox="0 0 40 40"><rect fill="#eef2ff" height="40" rx="12" width="40"></rect><path d="M16 14l-6 6 6 6M24 14l6 6-6 6" fill="none" stroke="#3d6bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"></path></svg><h3 data-i18n="k68">Programming</h3><p data-i18n="k69">Python for control, data and machine learning (SQLite, Streamlit, XGBoost); C++ through the ProgrammingAdvices roadmap; Git.</p></div>
+<div class="skill"><svg aria-hidden="true" viewbox="0 0 40 40"><rect fill="#eef2ff" height="40" rx="12" width="40"></rect><path d="M20 10l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10v-6z" fill="none" stroke="#3d6bff" stroke-linejoin="round" stroke-width="2.2"></path><path d="M16 20l3 3 5-6" fill="none" stroke="#43c6e0" stroke-linecap="round" stroke-width="2.2"></path></svg><h3 data-i18n="k70">Process safety</h3><p data-i18n="k71">AIChE courses in process safety, runaway reactions, hazard recognition and chemical reactivity, continuing through the 38-course series.</p></div>
+<div class="skill"><svg aria-hidden="true" viewbox="0 0 40 40"><rect fill="#eef2ff" height="40" rx="12" width="40"></rect><path d="M10 29C15 27 17 15 30 11" fill="none" stroke="#ef4444" stroke-linecap="round" stroke-width="2.2"></path><path d="M10 31C18 30 20 21 30 18" fill="none" stroke="#3d6bff" stroke-linecap="round" stroke-width="2.2"></path></svg><h3 data-i18n="k72">Analysis</h3><p data-i18n="k73">Pinch analysis and heat exchanger networks, techno-economic analysis, life cycle assessment.</p></div>
+</div>
 </div></section>
-
-<section id="contact" class="band" style="padding-top:0"><div class="wrap">
-  <div class="cta">
-    <div><h2>Let's build something that runs.</h2><p class="lead">Open to internships, graduate roles, freelance simulation work and research collaboration.</p><div class="btns"><a class="btn solid" href="work.html">Work with me</a></div></div>
-    <div class="contact">
-      <a href="mailto:mustafa.a.y.adam@gmail.com">mustafa.a.y.adam@gmail.com <span>Email</span></a>
-      <a href="https://www.linkedin.com/in/mustafa-adam-2b5624257">linkedin.com/in/mustafa-adam <span>LinkedIn</span></a>
-      <a href="https://github.com/mustafaChemEng">github.com/mustafaChemEng <span>GitHub</span></a>
-    </div>
-  </div>
+<section class="band" id="contact" style="padding-top:0"><div class="wrap">
+<div class="cta">
+<div><h2 data-i18n="k74">Let's build something that runs.</h2><p class="lead" data-i18n="k75">Open to internships, graduate roles, freelance simulation work and research collaboration.</p><div class="btns"><a class="btn solid" data-i18n="k3" href="work.html">Work with me</a></div></div>
+<div class="contact">
+<a href="mailto:mustafa.a.y.adam@gmail.com">mustafa.a.y.adam@gmail.com <span data-i18n="k76">Email</span></a>
+<a href="https://www.linkedin.com/in/mustafa-adam-2b5624257">linkedin.com/in/mustafa-adam <span data-i18n="k77">LinkedIn</span></a>
+<a href="https://github.com/mustafaChemEng">github.com/mustafaChemEng <span data-i18n="k78">GitHub</span></a>
+</div>
+</div>
 </div></section>
-
-<footer class="band" style="padding-block:28px"><div class="wrap"><span>© <span id="year">2026</span> Mustafa Ali Yahya Adam · Bolu, Türkiye</span><span>Built by hand: HTML, CSS, a little JavaScript</span></div></footer>
+<footer class="band" style="padding-block:28px"><div class="wrap"><span data-i18n="k79">© <span id="year">2026</span> Mustafa Ali Yahya Adam · Bolu, Türkiye</span><span data-i18n="k80">Built by hand: HTML, CSS, a little JavaScript</span></div></footer>
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/site.js"></script>
 <script src="assets/js/sim.js"></script>
 </body>

@@ -202,3 +202,26 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 .step b{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;border:2px solid var(--blue);color:var(--blue);font:700 14px "JetBrains Mono",monospace;margin-bottom:12px}
 .step p{font-size:15px;color:var(--mute);margin:0}
 .services.quad{grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))}
+.cta ul.pts li{color:#dbe3f3}.cta ul.pts li::before{border-color:var(--cyan)}
+/* language switcher */
+.lang{display:flex;gap:2px;padding:3px;border:1px solid rgba(255,255,255,.16);border-radius:999px;order:3}
+.lang button{min-width:38px;min-height:32px;border:0;border-radius:999px;background:transparent;color:#c9d3e6;font:600 13px Inter,sans-serif;cursor:pointer}
+.lang button[lang=ar]{font-family:"IBM Plex Sans Arabic",sans-serif;font-size:15px}
+.lang button[aria-pressed=true]{background:#fff;color:var(--night)}
+.links{order:2}.menu{order:4}
+.lang-note{font-size:15px!important;color:#8fe3f3!important}
+/* Arabic and right-to-left */
+html[lang=ar] body,html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3,html[lang=ar] .role,html[lang=ar] .btn,html[lang=ar] .ctl,html[lang=ar] .links a,html[lang=ar] .older a{font-family:"IBM Plex Sans Arabic",Inter,sans-serif;letter-spacing:0}
+html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3{line-height:1.3}
+[dir=rtl] ul.pts li{padding-left:0;padding-right:22px}
+[dir=rtl] ul.pts li::before{left:auto;right:2px}
+[dir=rtl] .photo{margin:0 0 0 18px}
+[dir=rtl] .frame::before{inset:18px 18px -18px -18px}
+[dir=rtl] .people.flip .photo{margin:0 18px 0 0}
+[dir=rtl] .people.flip .frame::before{inset:18px -18px -18px 18px}
+[dir=rtl] .brand,[dir=rtl] .kpi b,[dir=rtl] .readout b,[dir=rtl] .monitor .bar span,[dir=rtl] .plant,[dir=rtl] .trend{direction:ltr}
+[dir=rtl] .kpi b,[dir=rtl] .readout b{text-align:right}
+[dir=rtl] .callout{background:linear-gradient(270deg,#fff1f1,#fff)}
+@media(max-width:640px){.lang{order:2}.menu{order:3}.links{order:4}}
+@media(max-width:640px){.nav .wrap{gap:10px}.lang button{min-width:32px}.brand{font-size:16px}.menu{padding:0 12px}}
+@media(max-width:380px){.brand span,.brand{font-size:15px}}

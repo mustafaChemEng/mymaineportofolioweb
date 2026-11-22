@@ -14,6 +14,7 @@
       t: root.querySelector('#rT'), lvl: root.querySelector('#rL'), err: root.querySelector('#rE'), valve: root.querySelector('#rV'), iae: root.querySelector('#rI'), fin: root.querySelector('#rF')
     };
     let s, running = true, scripted = true, timer = null;
+    const T = k => (window.i18n ? window.i18n.t(k) : k);
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     function init() {
@@ -25,7 +26,7 @@
     function log() { s.hist.push([s.t, s.L, s.sp, s.ua]); if (s.hist.length > SPAN / DT + 1) s.hist.shift(); }
     function step() {
       if (scripted) {
-        if (s.t === 120) { s.fin = 1.097; els.upset.textContent = 'Remove upset'; }
+        if (s.t === 120) { s.fin = 1.097; els.upset.textContent = T('x_remove'); }
         if (s.t === 600) { s.sp = 0.6; els.sp.value = 0.6; els.spOut.textContent = '0.60'; }
         if (s.t >= SPAN) scripted = false;
       }
@@ -51,7 +52,7 @@
         <defs><linearGradient id="wat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#43c6e0" stop-opacity=".75"/><stop offset="1" stop-color="#3d6bff" stop-opacity=".85"/></linearGradient>
         <clipPath id="tk"><rect x="80" y="${top}" width="110" height="${bot - top}" rx="16"/></clipPath></defs>
         <path d="M10 70H80" stroke="${upset ? '#ef4444' : '#7c9bff'}" stroke-width="5"/>
-        <text x="10" y="58">FEED</text>
+        <text x="10" y="58">${T('x_feed')}</text>
         <text class="lbl" x="10" y="92">${s.fin.toFixed(3)} kg/s</text>
         ${upset ? '<text x="10" y="110" fill="#ff8a8a" style="fill:#ff8a8a">+50 kPa</text>' : ''}
         <rect x="80" y="${top}" width="110" height="${bot - top}" rx="16" fill="#0b1430" stroke="#c9d3e6" stroke-width="2"/>
@@ -66,7 +67,7 @@
         <text x="228" y="270">V2 ${op}%</text>
         <circle cx="250" cy="120" r="22" fill="#0b1430" stroke="${els.pi.checked ? '#2bd17e' : '#525d70'}" stroke-width="2.5"/>
         <path d="M228 120H272" stroke="${els.pi.checked ? '#2bd17e' : '#525d70'}" stroke-width="1"/>
-        <text x="237" y="116">LIC</text><text class="lbl" x="236" y="135">${els.pi.checked ? 'PI on' : 'manual'}</text>
+        <text x="237" y="116">LIC</text><text class="lbl" x="236" y="135">${els.pi.checked ? T('x_pion') : T('x_manual')}</text>
         <path d="M190 120H228" stroke="#ef4444" stroke-dasharray="4 4" stroke-width="1.6"/>
         <path d="M250 142V196" stroke="#ef4444" stroke-dasharray="4 4" stroke-width="1.6"/>`;
     }
@@ -103,18 +104,20 @@
       els.iae.textContent = s.iae.toFixed(1);
       els.fin.textContent = s.fin.toFixed(3);
     }
+    function setUpsetLabel() { els.upset.textContent = s.fin > 1 ? T('x_remove') : T('k24'); }
     function render() { drawPlant(); drawTrend(); readouts(); }
     function tick() { for (let k = 0; k < 2; k++) step(); render(); }
-    function play() { clearInterval(timer); timer = setInterval(tick, 100); running = true; els.run.textContent = 'Pause'; }
-    function pause() { clearInterval(timer); running = false; els.run.textContent = 'Run'; }
+    function play() { clearInterval(timer); timer = setInterval(tick, 100); running = true; els.run.textContent = T('k23'); }
+    function pause() { clearInterval(timer); running = false; els.run.textContent = T('x_run'); }
 
     els.run.addEventListener('click', () => running ? pause() : play());
-    els.upset.addEventListener('click', () => { scripted = false; s.fin = s.fin > 1 ? 0.976 : 1.097; els.upset.textContent = s.fin > 1 ? 'Remove upset' : 'Feed upset +50 kPa'; render(); });
-    els.reset.addEventListener('click', () => { init(); els.upset.textContent = 'Feed upset +50 kPa'; render(); });
+    els.upset.addEventListener('click', () => { scripted = false; s.fin = s.fin > 1 ? 0.976 : 1.097; setUpsetLabel(); render(); });
+    els.reset.addEventListener('click', () => { init(); setUpsetLabel(); render(); });
     els.pi.addEventListener('change', () => { scripted = false; render(); });
     els.sp.addEventListener('input', () => { scripted = false; s.sp = +els.sp.value; els.spOut.textContent = s.sp.toFixed(2); render(); });
     const ro = new ResizeObserver(() => drawTrend()); ro.observe(els.cv);
 
+    document.addEventListener('langchange', () => { els.run.textContent = running ? T('k23') : T('x_run'); setUpsetLabel(); render(); });
     init();
     if (reduce) { for (let k = 0; k < SPAN / DT; k++) step(); render(); pause(); }
     else { render(); play(); }

@@ -1,65 +1,61 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Notes | Mustafa Adam</title>
-<meta name="description" content="Short engineering notes by Mustafa Ali Yahya Adam on simulation, control and design projects.">
-<link rel="icon" href="favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
+<meta content="Short engineering notes by Mustafa Ali Yahya Adam on simulation, control and design projects." name="description"/>
+<link href="favicon.ico" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/site.css" rel="stylesheet"/>
 </head>
 <body>
-
 <nav class="nav"><div class="wrap">
-  <a class="brand" href="index.html"><i>MA</i>Mustafa Adam</a>
-  <button class="menu" aria-expanded="false" aria-controls="links">Menu</button>
-  <div class="links" id="links">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="work.html">Work with me</a>
-    <a href="blog.html" aria-current="page">Notes</a>
-    <a href="index.html#contact">Contact</a>
-  </div>
+<a class="brand" href="index.html"><i>MA</i>Mustafa Adam</a>
+<div class="lang" role="group" aria-label="Language"><button data-l="en" aria-pressed="true">EN</button><button data-l="tr" aria-pressed="false">TR</button><button data-l="ar" aria-pressed="false" lang="ar">ع</button></div><button aria-controls="links" aria-expanded="false" class="menu" data-i18n="k0">Menu</button>
+<div class="links" id="links">
+<a data-i18n="k1" href="index.html">Home</a>
+<a data-i18n="k2" href="projects.html">Projects</a>
+<a data-i18n="k3" href="work.html">Work with me</a>
+<a aria-current="page" data-i18n="k4" href="blog.html">Notes</a>
+<a data-i18n="k5" href="index.html#contact">Contact</a>
+</div>
 </div></nav>
-
 <header class="band page-head"><div class="wrap">
-  <h1>Notes</h1>
-  <p class="lead">Short write-ups of what I built and what I learned.</p>
+<h1 data-i18n="k4">Notes</h1>
+<p class="lead" data-i18n="k137">Short write-ups of what I built and what I learned.</p>
+<p class="lead lang-note" hidden></p>
 </div></header>
 <main class="band"><div class="wrap">
-
-  <article class="post">
-    <div class="when">November 2026 · Control and digital twins</div>
-    <h2>Closing a PI loop around a dynamic AVEVA model from Python</h2>
-    <p>The hard part was not the controller. It was getting a steady starting point: the model drifted when switched to Dynamics, so I added an initialisation run that holds the plant until inflow and outflow match, then saves that state as the snapshot every run starts from. With that in place, the SIMC-tuned PI cut the peak level error from 6.5 cm to 0.8 cm.</p>
-    <a href="projects.html#twin">Read the project</a>
-  </article>
-
-  <article class="post">
-    <div class="when">2026 · Graduation Project II</div>
-    <h2>A 960 °C warning hidden in the case-study data</h2>
-    <p>While training a surrogate model on 363 Power-to-Methane simulation cases, some first-reactor outlet temperatures reached 925–960 °C, far above the 620 °C catalyst limit. Tracing it back showed the recycle split drives the exotherm, so the recycle loop needs tight control.</p>
-    <a href="projects.html#ptm">Read the project</a>
-  </article>
-
-  <article class="post">
-    <div class="when">December 2025 · Venture</div>
-    <h2>Modelling SafaWater in AVEVA Process Simulation</h2>
-    <p>I modelled the SafaWater concept, a UF–RO water purification train powered by solar panels, wind turbines and a battery, in a single AVEVA model so the power side and the water side are solved together.</p>
-    <a href="projects.html#safawater">Read the project</a>
-  </article>
-
-  <article class="post">
-    <div class="when">July 2025 · Process simulation</div>
-    <h2>Simulating the lifecycle of Sharbot fermentation</h2>
-    <p>A Simulink model of sugar to ethanol to vinegar, combining yeast and acetic-acid bacteria kinetics with pH inhibition and the switch from anaerobic to aerobic stages.</p>
-    <a href="projects.html#sharbot">Read the project</a>
-  </article>
+<article class="post">
+<div class="when">November 2026 · Control and digital twins</div>
+<h2>Closing a PI loop around a dynamic AVEVA model from Python</h2>
+<p>The hard part was not the controller. It was getting a steady starting point: the model drifted when switched to Dynamics, so I added an initialisation run that holds the plant until inflow and outflow match, then saves that state as the snapshot every run starts from. With that in place, the SIMC-tuned PI cut the peak level error from 6.5 cm to 0.8 cm.</p>
+<a href="projects.html#twin">Read the project</a>
+</article>
+<article class="post">
+<div class="when">2026 · Graduation Project II</div>
+<h2>A 960 °C warning hidden in the case-study data</h2>
+<p>While training a surrogate model on 363 Power-to-Methane simulation cases, some first-reactor outlet temperatures reached 925–960 °C, far above the 620 °C catalyst limit. Tracing it back showed the recycle split drives the exotherm, so the recycle loop needs tight control.</p>
+<a href="projects.html#ptm">Read the project</a>
+</article>
+<article class="post">
+<div class="when">December 2025 · Venture</div>
+<h2>Modelling SafaWater in AVEVA Process Simulation</h2>
+<p>I modelled the SafaWater concept, a UF–RO water purification train powered by solar panels, wind turbines and a battery, in a single AVEVA model so the power side and the water side are solved together.</p>
+<a href="projects.html#safawater">Read the project</a>
+</article>
+<article class="post">
+<div class="when">July 2025 · Process simulation</div>
+<h2>Simulating the lifecycle of Sharbot fermentation</h2>
+<p>A Simulink model of sugar to ethanol to vinegar, combining yeast and acetic-acid bacteria kinetics with pH inhibition and the switch from anaerobic to aerobic stages.</p>
+<a href="projects.html#sharbot">Read the project</a>
+</article>
 </div></main>
-
-<footer class="band" style="padding-block:28px"><div class="wrap"><span>© <span id="year">2026</span> Mustafa Ali Yahya Adam · Bolu, Türkiye</span><a href="index.html#contact">Contact</a></div></footer>
+<footer class="band" style="padding-block:28px"><div class="wrap"><span data-i18n="k79">© <span id="year">2026</span> Mustafa Ali Yahya Adam · Bolu, Türkiye</span><a data-i18n="k5" href="index.html#contact">Contact</a></div></footer>
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/site.js"></script>
 </body>
 </html>
