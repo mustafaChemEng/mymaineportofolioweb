@@ -81,7 +81,7 @@
       k131: 'Bu sayfadaki her görsel kendi modellerimden bir ekran görüntüsü ya da grafik. Büyütmek için görsele tıklayın.',
       k132: 'Tümü', k133: 'Kontrol ve dijital ikizler', k134: 'Simülasyon', k135: 'Tesis tasarımı', k136: 'Makine öğrenmesi',
       k137: 'Yaptıklarım ve öğrendiklerim üzerine kısa yazılar.',
-      x_note: 'Teknik proje ayrıntıları İngilizcedir.', x_run: 'Başlat', x_remove: 'Bozucuyu kaldır', x_pion: 'PI açık', x_manual: 'manuel', x_feed: 'BESLEME'
+      k138: 'Takım kaptanı, AIChE ChemE-Sports', k139: 'Üniversite takımlarının bir operatör eğitim simülatöründe canlı bir damıtma kolonunu işlettiği, bozucu etkiler ve alarmlar karşısında ürünleri şartnamede ve üniteyi kârlı tuttuğu uluslararası bir yarışma. BAİBÜ takımının 2025 ve 2026\'da kaptanlığını yaptım; ABD, Ekvador ve Bangladeş\'teki üniversitelerin takımlarıyla çevrim içi yarıştık.', k140: 'Yarışma simülatörü: işlettiğimiz operatör ekranı ve 3B sanal tesisi.', x_note: 'Teknik proje ayrıntıları İngilizcedir.', x_run: 'Başlat', x_remove: 'Bozucuyu kaldır', x_pion: 'PI açık', x_manual: 'manuel', x_feed: 'BESLEME'
     },
     ar: {
       k0: 'القائمة', k1: 'الرئيسية', k2: 'المشاريع', k3: 'اعمل معي', k4: 'ملاحظات', k5: 'تواصل',
@@ -162,7 +162,7 @@
       k131: 'كل صورة في هذه الصفحة لقطة شاشة أو رسم من نماذجي الخاصة. اضغط على أي صورة لتكبيرها.',
       k132: 'الكل', k133: 'التحكم والتوائم الرقمية', k134: 'المحاكاة', k135: 'تصميم المصانع', k136: 'تعلم الآلة',
       k137: 'كتابات قصيرة عمّا بنيته وتعلمته.',
-      x_note: 'تفاصيل المشاريع التقنية مكتوبة بالإنجليزية.', x_run: 'تشغيل', x_remove: 'إزالة الاضطراب', x_pion: 'يعمل', x_manual: 'يدوي', x_feed: 'التغذية'
+      k138: 'قائد الفريق، AIChE ChemE-Sports', k139: 'مسابقة دولية تشغّل فيها فرق الجامعات عمود تقطير حيًّا على محاكي تدريب المشغّلين، مع الحفاظ على مواصفات المنتجات وربحية الوحدة رغم الاضطرابات والإنذارات. قدت فريق BAİBÜ في 2025 و2026، ونافسنا عبر الإنترنت فرقًا من جامعات في الولايات المتحدة والإكوادور وبنغلاديش.', k140: 'محاكي المسابقة: شاشة المشغّل التي نديرها، ومصنعها الافتراضي ثلاثي الأبعاد.', x_note: 'تفاصيل المشاريع التقنية مكتوبة بالإنجليزية.', x_run: 'تشغيل', x_remove: 'إزالة الاضطراب', x_pion: 'يعمل', x_manual: 'يدوي', x_feed: 'التغذية'
     }
   };
   const EN = { k23: 'Pause', k24: 'Feed upset +50 kPa', x_note: '', x_run: 'Run', x_remove: 'Remove upset', x_pion: 'PI on', x_manual: 'manual', x_feed: 'FEED' };
