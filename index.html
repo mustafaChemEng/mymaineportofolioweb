@@ -23,15 +23,14 @@
   <div class="links" id="links">
     <a href="index.html" aria-current="page">Home</a>
     <a href="projects.html">Projects</a>
-    <a href="index.html#leadership">Leadership</a>
-    <a href="coaching.html">English coaching</a>
+    <a href="work.html">Work with me</a>
     <a href="blog.html">Notes</a>
     <a href="#contact">Contact</a>
   </div>
 </div></nav>
 
 <header class="band hero"><div class="wrap">
-  <div class="status"><b></b>Graduating early 2027 · open to internships and graduate roles</div>
+  <div class="status"><b></b>Graduating early 2027 · open to roles, freelance simulation and collaboration</div>
   <div class="hero-top">
     <div>
       <h1>Mustafa Ali<br><span class="grad">Yahya Adam</span></h1>
@@ -41,34 +40,57 @@
       <p class="lead">Final-year chemical engineering student at BAİBÜ, Türkiye. I build dynamic models in AVEVA Process Simulation and close control loops around them with Python.</p>
       <div class="btns">
         <a class="btn solid" href="projects.html">See the projects</a>
-        <a class="btn ghost" href="assets/Mustafa_Adam_CV.pdf">Download CV</a>
-        <a class="btn ghost" href="https://github.com/mustafaChemEng">GitHub</a>
+        <a class="btn ghost" href="work.html">Work with me</a>
+        <a class="btn ghost" href="assets/Mustafa_Adam_CV.pdf">CV</a>
       </div>
     </div>
   </div>
 
+  <section class="sim" id="sim" aria-label="Interactive level control simulator">
+    <div class="sim-top"><h2>Try my level controller</h2><p>Live in your browser. Hit the feed with an upset, move the set point, switch the controller off.</p></div>
+    <div class="sim-body">
+      <div class="plant"><svg viewBox="0 0 300 285" role="img" aria-label="Tank with feed, outlet valve V2 and level controller LIC"></svg></div>
+      <div class="trend"><canvas aria-label="Trend of tank level, set point and valve opening over the last 1200 seconds"></canvas>
+        <div class="legend"><span><i style="background:linear-gradient(90deg,#3d6bff,#43c6e0)"></i>Level</span><span><i style="background:#fff"></i>Set point</span><span><i style="background:#2bd17e"></i>Valve opening</span></div></div>
+    </div>
+    <div class="readout">
+      <div><b id="rT">0 s</b><span>simulated time</span></div>
+      <div><b id="rL">50.0 %</b><span>tank level</span></div>
+      <div><b id="rE">0.0 cm</b><span>error from set point</span></div>
+      <div><b id="rV">69 %</b><span>valve V2 opening</span></div>
+      <div><b id="rF">0.976</b><span>feed, kg/s</span></div>
+      <div><b id="rI">0.0</b><span>integral abs. error</span></div>
+    </div>
+    <div class="controls">
+      <button class="ctl" id="simRun">Pause</button>
+      <button class="ctl warn" id="simUpset">Feed upset +50 kPa</button>
+      <label class="switch"><input type="checkbox" id="simPI" checked>PI controller</label>
+      <label class="sp" for="simSP">Set point <input type="range" id="simSP" min="0.4" max="0.7" step="0.01" value="0.5"><output id="simSPout">0.50</output></label>
+      <button class="ctl" id="simReset">Reset</button>
+    </div>
+    <p class="sim-note">A browser replica of my AVEVA tank model with the same PI tuning (Kc 16.6, τI 264 s, 2 s step). It reproduces the AVEVA results to within a few percent: 0.75 cm peak error with the controller, 6.4 cm without. Runs 20× faster than real time.</p>
+  </section>
+</div></header>
+
+<section id="twin" class="band room"><div class="wrap">
+  <div class="head">
+    <h2>The real thing: Python driving AVEVA</h2>
+    <p class="lead" style="max-width:52ch">The simulator above is the replica. This is the original: Python stepping the AVEVA model every 2 s through the Scripting Interface and logging each step to SQLite.</p>
+  </div>
   <figure class="monitor">
     <div class="bar"><i></i><i></i><i></i><span>closed_loop_run · AVEVA 2025 ↔ Python ↔ SQLite</span></div>
     <video src="assets/media/digital_twin_screen.mp4" poster="assets/img/twin-poster.webp" controls muted playsinline preload="none" aria-label="Screen recording: Python stepping a dynamic AVEVA Process Simulation tank model with a PI controller while a live dashboard plots level, valve and flows."></video>
     <figcaption>A real run, time-lapsed: live dashboard (left), AVEVA model (top right), Python loop (bottom right).</figcaption>
   </figure>
-
   <div class="kpis">
     <div class="kpi"><b>6.5 → 0.8 cm</b><span>peak level error after a feed-pressure upset</span></div>
     <div class="kpi"><b>−86 %</b><span>integral absolute error in the upset window</span></div>
     <div class="kpi"><b>2 s</b><span>control step, lock-step with the model</span></div>
     <div class="kpi"><b>100 %</b><span>repeatable: identical results run after run</span></div>
   </div>
-</div></header>
-
-<section id="twin" class="band room"><div class="wrap">
-  <div class="head">
-    <h2>One upset, two outcomes</h2>
-    <p class="lead" style="max-width:52ch">Python reads the AVEVA tank every 2 s, runs a SIMC-tuned PI controller, writes the valve back and logs each step to SQLite.</p>
-  </div>
   <div class="duo">
-    <figure class="plot"><img src="assets/img/twin-open-loop.webp" alt="Open-loop run: the valve stays fixed and the tank level drifts after the feed pressure rises." loading="lazy"><figcaption><b style="background:#ef4444"></b>Valve fixed: the level drifts away after the upset at 120 s.</figcaption></figure>
-    <figure class="plot"><img src="assets/img/twin-closed-loop.webp" alt="Closed-loop run: the PI controller opens the valve and holds the level, then tracks a set point step at 600 s." loading="lazy"><figcaption><b style="background:#2bd17e"></b>PI on: the level holds, then follows the set point step at 600 s.</figcaption></figure>
+    <figure class="plot"><img src="assets/img/twin-open-loop.webp" alt="Open-loop run: the valve stays fixed and the tank level drifts after the feed pressure rises." loading="lazy"><figcaption><b style="background:#ef4444"></b>AVEVA, valve fixed: the level drifts after the upset at 120 s.</figcaption></figure>
+    <figure class="plot"><img src="assets/img/twin-closed-loop.webp" alt="Closed-loop run: the PI controller opens the valve and holds the level, then tracks a set point step at 600 s." loading="lazy"><figcaption><b style="background:#2bd17e"></b>AVEVA, PI on: the level holds, then follows the set point step at 600 s.</figcaption></figure>
   </div>
   <p style="margin-top:22px">An honest label: this is a demonstrator. The plant is the simulation itself, and the same loop is built to take real sensor data next.</p>
   <div class="btns"><a class="btn ghost" href="https://github.com/mustafaChemEng/aps-python-digital-twin">Code and results on GitHub →</a></div>
@@ -124,7 +146,7 @@
 
 <section id="contact" class="band" style="padding-top:0"><div class="wrap">
   <div class="cta">
-    <div><h2>Let's build something that runs.</h2><p class="lead">Open to internships, graduate roles and research collaboration in process simulation, control and digital twins.</p></div>
+    <div><h2>Let's build something that runs.</h2><p class="lead">Open to internships, graduate roles, freelance simulation work and research collaboration.</p><div class="btns"><a class="btn solid" href="work.html">Work with me</a></div></div>
     <div class="contact">
       <a href="mailto:mustafa.a.y.adam@gmail.com">mustafa.a.y.adam@gmail.com <span>Email</span></a>
       <a href="https://www.linkedin.com/in/mustafa-adam-2b5624257">linkedin.com/in/mustafa-adam <span>LinkedIn</span></a>
@@ -135,5 +157,6 @@
 
 <footer class="band" style="padding-block:28px"><div class="wrap"><span>© <span id="year">2026</span> Mustafa Ali Yahya Adam · Bolu, Türkiye</span><span>Built by hand: HTML, CSS, a little JavaScript</span></div></footer>
 <script src="assets/js/site.js"></script>
+<script src="assets/js/sim.js"></script>
 </body>
 </html>
